@@ -1,7 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    </head>
-    <body>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>travel agency</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<!--rawan section navbar&login-->
+<body>
+    <div class="header">
+        <h2 class="logo">eqypt<span id="">air</span></h2>
+        <nav class="navbar">
+            <a href="home">home</a>
+            <a href="about">about</a>
+            <a href="package">package</a>
+            <a href="contact">contact</a>
+            <a href="booking">book trip</a>
+           <button class="nav_login" onclick="showform()">login</button>
+        </nav>
+        </div>
+        <!--log in form-->
+        <div><div class="login_form">
+            <form>
+                <div>
+                    <span  id="form-close" onclick="hideform()"> x </span>
+                </div>
+            <h3>LOG IN</h3>
+            <input type="email" placeholder="Enter your email" class="info" required>
+            <input type="password" placeholder="Enter your password" class="info" required>
+            <input type="submit"  class="info"  id="loginbtn" value="Log in now">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>
+            <p>don't have account?</p> <a href="#" id="signup">sign up</a>
+            </p>
+             </form>
+
+        </div>
+       
+
+<!-- الي بعدي يبدأ من هنا-->
+
+
+
+
+    <script src="file.js"></script>
+</body>
 </html>
