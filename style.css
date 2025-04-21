@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+}
+/*start nav bar styles*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(158, 158, 241, 0.507);
+    padding: 20px;
+}
+.logo{
+    width: 100px;
+    color:#0073e6;
+   text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 55px ;
+}
+.logo span{
+    color:#555;
+    font-weight: normal;
+    font-size: large;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+nav.navbar a {  
+     text-decoration: none; 
+     color: #003975;
+     padding: 2px 40px;
+     text-transform: uppercase;
+     font-family:"Noto Sans", sans-serif ;
+  }  
+  nav.navbar a:hover {
+    background-color:rgba(237, 237, 248, 0.719); 
+    border-radius: 15px;
+  }
+  button.nav_login{
+     border:none;
+     border-radius: 10px;
+     outline: none;
+     color: #003975;
+     padding: 5px 15px;
+     cursor: pointer;
+     font-family:"Noto Sans", sans-serif ;
+  }
+  button.nav_login:hover{
+    background-color:#003975 ;
+    color: white;
+  }
+
+/* end nav bar styles*/
+
+
+
+
+  /* start log in styles*/
+.login_form{
+    background-color:rgb(194,210,255,0.7);
+    position: fixed;
+    top:-120%;
+    left: 0;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.login_form.active {
+    top: 0px;
+    behavior: smooth;
+}
+
+
+/*علامه الاكس الي بحرف z الي عازين نغيرها*/
+.login_form #form-close {
+    position: absolute;
+    right: 29%;
+    top: 21%;
+    font-size: large;
+    color:  #000038;
+    cursor: pointer;
+    align-items: center;
+
+}
+
+
+
+.login_form form {
+    background-color:white;
+    border-radius: 2px;
+    margin: auto;
+    padding: 30px;
+    width: 40%;
+    height: 50%;
+    
+}
+
+
+
+.login_form form h3{
+    color:#003975;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+.info {
+    width: 80%;
+    position: relative;
+    left: 5%;
+    outline: none;
+    display: block;
+    padding: 12px;
+    margin: 15px;
+    
+    
+}
+#loginbtn{
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top:25px ;
+    background-color: #dbdbee;
+}
+#loginbtn:hover{
+    background-color: #9999ee;
+    color: white;
+}
+.login_form form label {
+    cursor: pointer;
+}
+.login_form form p{
+    display: inline-block;
+    margin-left: 125px;
+    margin-top: 25px;
+}
+
+/*end login styles*/
