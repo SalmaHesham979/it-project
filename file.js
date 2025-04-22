@@ -69,6 +69,30 @@ function hide_from_signup(){
       
 }
 /* end For sign up  */
+/*the begin of landing page*/
 
+const scrollRevealOption = {
+  origin: "bottom",
+  distance: "50px",
+  duration: 1000,
+};
+
+ScrollReveal().reveal(".headerImage img", {
+  ...scrollRevealOption,
+  origin: "right",
+});
+ScrollReveal().reveal(".headerContent p", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".headerContent h1", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".headerBtns", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+/*the end of landing page*/
 
 

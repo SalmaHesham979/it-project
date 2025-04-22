@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(158, 158, 241, 0.507);
+    background-color: white;
     padding: 20px;
 }
 .logo{
@@ -27,13 +27,13 @@
 }
 nav.navbar a {  
      text-decoration: none; 
-     color: #003975;
+     color:black;
      padding: 2px 40px;
      text-transform: uppercase;
      font-family:"Noto Sans", sans-serif ;
   }  
   nav.navbar a:hover {
-    background-color:rgba(237, 237, 248, 0.719); 
+    background-color:rgb(44, 145, 227); 
     border-radius: 15px;
   }
   button.nav_login{
@@ -254,5 +254,117 @@ nav.navbar a {
     color: red;
 }
 
-
 /*end signup styles*/
+/*the begin of landing page styles*/
+header{
+    margin-top: 5rem;
+    padding-inline: 1rem;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+header::before{
+    position: absolute;
+    content: "";
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform:none;
+    background-image: url("header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3rem;
+    z-index: -1;
+}
+.headerContainer{
+    display: grid;
+}
+.headerContent{
+    padding: 4rem 1rem;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+.headerContent p{
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+.headerContent h1{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 400;
+    color:black;
+    line-height: 5.5rem;
+    text-align: center ;
+}
+.headerBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.headerBtns .h-btn{
+    padding: 1rem 2rem;
+    color:white;
+    background-color:rgb(44, 145, 227);
+    border-radius: 20px;
+    padding: 15px;
+    border: 0;
+}
+.headerBtns button:hover{
+    color: rgb(44, 145, 227);
+    background-color:white;
+}
+.headerBtns a {
+    padding: 9px 13px;
+    font-size: 1.5rem;
+    color:white;
+    background-color: rgb(44, 145, 227);
+    border-radius:100%;
+    text-decoration: none;
+}
+.headerBtns a:hover{
+    color: rgb(44, 145, 227);
+    background-color: white;
+}
+header{
+    margin-top: 0;
+    height: 100vh;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.headerContainer{
+    grid-template-columns: 
+    minmax(0, 1fr)
+    repeat(5, minmax(0, calc(var(--max-width)/5)))
+    minmax(0, 1fr);
+}
+.headerContent{
+    grid-column: 2/4;
+    padding-block: 8rem;
+}
+.headerContent :is(p,h1 ){
+    text-align: left;
+}
+.headerBtns{
+    justify-content: flex-start;
+}
+.headerImage{
+    grid-column: 4/8;
+    position: relative;
+    isolation: isolate;
+    height: 100%;
+}
+.headerImage img{
+    position: absolute;
+    width:100%;
+    top: 2rem;
+    left: 0;
+    height: auto;
+    width: unset;
+}
+/*the end of landing page*/
