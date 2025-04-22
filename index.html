@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
             <a href="about">about</a>
             <a href="package">package</a>
             <a href="contact">contact</a>
-            <a href="booking">book trip</a>
+            <a href="booking">booking</a>
            <button class="nav_login" onclick="showform()">login</button>
         </nav>
         </div>
@@ -30,18 +31,44 @@
                     <span  id="form-close" onclick="hideform()">&#10005;</span>
                 </div>
             <h3>LOG IN</h3>
-            <input type="email" placeholder="Enter your email" class="info" required>
-            <input type="password" placeholder="Enter your password" class="info" required>
-            <input type="submit"  class="info"  id="loginbtn" value="Log in now">
+            <input type="email" placeholder="Enter your email" class="info empass"  id="email"  required >
+            <input type="password" placeholder="Enter your password" class="info empass" id="password" required minlength="8" maxlength="15">
+            <input type="submit"  class="info"  id="btn" value="Log in now" onclick="hide()">
             <input type="checkbox" id="remember">
             <label for="remember">remember me</label>
             <p>
-            <p>don't have account?</p> <a href="#" id="signup">sign up</a>
+            <p>don't have account?</p> <a href="#" id="signup" onclick="signupshow()">sign up</a>
             </p>
              </form>
 
         </div>
-       
+<!--end log in form-->
+
+<!-- start sign up form-->
+<div><div class="signup_form">
+    <form>
+        <div>
+            <span  id="form-close" onclick="signuphide()">&#10005;</span>
+        </div>
+    <h1>Sign up</h1>
+    <input type="text" placeholder="Full Name" class="signupinfo empass" id="username"  required autofocus>
+    <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em"  required >
+    <input type="password" placeholder="Enter your password" class="signupinfo empass"  id="pass" required >
+    <div class="checkbox-group">
+        <input type="checkbox" id="agree" required>
+        <label for="agree">I agree the terms and conditions</label>
+    </div>
+    <input type="submit"  class="info"  id="btn" value="Sign up" onclick="hide_from_signup()">
+     <br> <br> <hr>
+    <div class="google">
+        <i class="fab fa-google"></i>
+       <a href="https.google"><span>Sign in with Google</span></a>
+    </div>
+     </form>
+
+</div>
+
+<!--end sign up form-->
 
 <!-- الي بعدي يبدأ من هنا-->
 

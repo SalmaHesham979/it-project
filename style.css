@@ -67,14 +67,15 @@ nav.navbar a {
     justify-content: center;
     align-items: center;
     z-index: 200;
+    opacity: 0;
+    transition: opacity 0.5s ease;
 }
 .login_form.active {
     top: 0px;
-    behavior: smooth;
+    opacity: 1;
 }
 
-
-/*علامه الاكس الي بحرف z الي عازين نغيرها*/
+/* علامه الاكس*/
 .login_form #form-close {
     position: absolute;
     right: 29%;
@@ -115,17 +116,30 @@ nav.navbar a {
     outline: none;
     display: block;
     padding: 12px;
-    margin: 15px;
-    
-    
+    margin: 15px;    
 }
-#loginbtn{
+.empass{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #ddd;
+}
+
+.info:hover {
+    transform: scale(1.02);
+    transition: all 0.1s ease;
+}
+
+
+
+
+#btn{
     border-radius: 20px;
     cursor: pointer;
     margin-top:25px ;
     background-color: #dbdbee;
+    
 }
-#loginbtn:hover{
+#btn:hover{
     background-color: #9999ee;
     color: white;
 }
@@ -134,8 +148,111 @@ nav.navbar a {
 }
 .login_form form p{
     display: inline-block;
-    margin-left: 125px;
+    margin-left: 100px;
     margin-top: 25px;
+    
+}
+#signup {
+    text-decoration: none;
+    color:#0a0a3ada
+}
+#signup:hover {
+    background-color: #f176c2cc;
+    border-radius: 10px;
+    padding: 2px;
+    color: white;
+    text-decoration:underline ;
 }
 
 /*end login styles*/
+
+/*start signup styles*/
+.signup_form{
+    background-color:rgb(194,210,255,0.7);
+    position: fixed;
+    top:-120%;
+    left: 0;
+    width:100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.signup_form.active{
+    top:0;
+}
+.signup_form form {
+    background-color:white;
+    border-radius: 2px;
+    margin: auto;
+    padding: 30px;
+    width: 40%;
+    height: 80%;
+}
+.signup_form form h1{
+    color:#003975;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 30px;
+}
+.google {
+    color:#a187ffea;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+.fa-google {
+    color: #d40303c5;
+     font-size: 30px;
+     
+}
+.google a{
+    text-decoration: none;
+    margin-top:7px;
+}
+.signupinfo {
+    width: 80%;
+    position: relative;
+    left: 5%;
+    outline: none;
+    display: block;
+    padding: 12px;
+    margin: 30px 15px 30px 15px;
+    
+    
+    
+}
+.signupinfo:hover{
+    transform: scale(1.02);
+    transition: all 0.1s ease;
+}
+#agree:checked + label[for="agree"] {  
+    color: green;  
+    font-weight: bold;  
+    padding-left: 10px;
+  }  
+  .checkbox-group {  
+    padding-left: 40px;
+    display: flex;  
+    align-items: center; 
+    gap: 5px; 
+    cursor: pointer;
+  }  
+  .signup_form #form-close {
+    position: absolute;
+    right: 29%;
+    top: 8%;
+    font-size: large;
+    color:  #000038;
+    cursor: pointer;
+    align-items: center;
+}
+#form-close:hover{
+    color: red;
+}
+
+
+/*end signup styles*/
