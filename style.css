@@ -84,6 +84,9 @@ nav.navbar a {
     cursor: pointer;
     align-items: center;
 }
+#form-close:hover{
+    color: red;
+}
 
 
 
