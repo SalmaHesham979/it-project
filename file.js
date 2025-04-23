@@ -94,5 +94,8 @@ ScrollReveal().reveal(".headerBtns", {
   delay: 1500,
 });
 /*the end of landing page*/
-
-
+// sarah`s turn
+ScrollReveal().reveal(".destinationCard", {
+  ...scrollRevealOption,
+  interval: 500,
+});
