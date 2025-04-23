@@ -517,3 +517,11 @@ header{
   .sectionDescription{
     color: #55555569;
   }
+  .journey{
+    justify-content: center;  
+    text-align: center;    
+  }
+  .sectionHeader {
+    font-size: 48px;
+    font-family: 'Journey To The Sky Made Simple!', sans-serif;
+  }
