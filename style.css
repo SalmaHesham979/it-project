@@ -514,4 +514,6 @@ header{
   .journeyCardContent p {
     color: var(--extra-light);
   }
-  
+  .sectionDescription{
+    color: #55555569;
+  }
