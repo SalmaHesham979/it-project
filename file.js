@@ -99,3 +99,20 @@ ScrollReveal().reveal(".destinationCard", {
   ...scrollRevealOption,
   interval: 500,
 });
+ScrollReveal().reveal(".showsea_image img", {
+  ...scrollRevealOption,
+  origin: "left",
+});
+ScrollReveal().reveal(".showcase_content h3", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+ScrollReveal().reveal(".showcase_Content p", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+ScrollReveal().reveal(".showcase_btn", {
+  ...scrollRevealOption,
+  delay: 1500,
+});
+
