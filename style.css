@@ -562,7 +562,7 @@ word-wrap: break-word;
   margin-left: 50px;
 }
 .showcase_content .btn{
-  width: 100%;
+  width: 50%;
   margin-top:10px;
   padding: 1.5rem;
   font-weight: 600;
@@ -573,7 +573,7 @@ word-wrap: break-word;
   background-repeat: no-repeat;
   border-radius: 20px;
   margin-bottom: 100px;
-  margin-left: 43px;
+  margin-left: 300px;
 }
 .banner_container{
   display: grid;
