@@ -1,536 +1,535 @@
 :root {
-    --primary-color: #2887ff;
-    --primary-color-dark: #2476da;
-    --text-dark: #0a0a0a;
-    --text-light: #737373;
-    --extra-light: #f3f4f6;
-    --white: #ffffff;
-    --max-width: 1200px;
-  }
+  --primary-color: #2887ff;
+  --primary-color-dark: #2476da;
+  --text-dark: #0a0a0a;
+  --text-light: #737373;
+  --extra-light: #f3f4f6;
+  --white: #ffffff;
+  --max-width: 1200px;
+}
 *{
-    margin:0;
-    padding: 0;
+  margin:0;
+  padding: 0;
 }
 /*start nav bar styles*/
 
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
 }
 .logo{
-    width: 100px;
-    color:#0073e6;
-   text-transform: uppercase;
-  font-family: 'Times New Roman', Times, serif;
-  padding-left: 55px ;
+  width: 100px;
+  color:#0073e6;
+ text-transform: uppercase;
+font-family: 'Times New Roman', Times, serif;
+padding-left: 55px ;
 }
 .logo span{
-    color:#555;
-    font-weight: normal;
-    font-size: large;
-    text-transform: lowercase;
-    letter-spacing: 1px;
+  color:#555;
+  font-weight: normal;
+  font-size: large;
+  text-transform: lowercase;
+  letter-spacing: 1px;
 }
 nav.navbar a {  
-     text-decoration: none; 
-     color:black;
-     padding: 2px 40px;
-     text-transform: uppercase;
-     font-family:"Noto Sans", sans-serif ;
-  }  
-  nav.navbar a:hover {
-    background-color:rgb(44, 145, 227); 
-    border-radius: 15px;
-  }
-  button.nav_login{
-     border:none;
-     border-radius: 10px;
-     outline: none;
-     color: #003975;
-     padding: 5px 15px;
-     cursor: pointer;
-     font-family:"Noto Sans", sans-serif ;
-  }
-  button.nav_login:hover{
-    background-color:#003975 ;
-    color: white;
-  }
+   text-decoration: none; 
+   color:black;
+   padding: 2px 40px;
+   text-transform: uppercase;
+   font-family:"Noto Sans", sans-serif ;
+}  
+nav.navbar a:hover {
+  background-color:rgb(44, 145, 227); 
+  border-radius: 15px;
+}
+button.nav_login{
+   border:none;
+   border-radius: 10px;
+   outline: none;
+   color: #003975;
+   padding: 5px 15px;
+   cursor: pointer;
+   font-family:"Noto Sans", sans-serif ;
+}
+button.nav_login:hover{
+  background-color:#003975 ;
+  color: white;
+}
 
 /* end nav bar styles*/
 
 
 
 
-  /* start log in styles*/
+/* start log in styles*/
 .login_form{
-    background-color:rgb(194,210,255,0.7);
-    position: fixed;
-    top:-120%;
-    left: 0;
-    width:100%;
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 200;
-    opacity: 0;
-    transition: opacity 0.5s ease;
+  background-color:rgb(194,210,255,0.7);
+  position: fixed;
+  top:-120%;
+  left: 0;
+  width:100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 .login_form.active {
-    top: 0px;
-    opacity: 1;
+  top: 0px;
+  opacity: 1;
 }
 
 /* علامه الاكس*/
 .login_form #form-close {
-    position: absolute;
-    right: 29%;
-    top: 21%;
-    font-size: large;
-    color:  #000038;
-    cursor: pointer;
-    align-items: center;
+  position: absolute;
+  right: 29%;
+  top: 21%;
+  font-size: large;
+  color:  #000038;
+  cursor: pointer;
+  align-items: center;
 }
 #form-close:hover{
-    color: red;
+  color: red;
 }
 
 
 
 .login_form form {
-    background-color:white;
-    border-radius: 2px;
-    margin: auto;
-    padding: 30px;
-    width: 40%;
-    height: 50%;
-    
+  background-color:white;
+  border-radius: 2px;
+  margin: auto;
+  padding: 30px;
+  width: 40%;
+  height: 50%;
+  
 }
 
 
 
 .login_form form h3{
-    color:#003975;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 30px;
+  color:#003975;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
 }
 .info {
-    width: 80%;
-    position: relative;
-    left: 5%;
-    outline: none;
-    display: block;
-    padding: 12px;
-    margin: 15px;    
+  width: 80%;
+  position: relative;
+  left: 5%;
+  outline: none;
+  display: block;
+  padding: 12px;
+  margin: 15px;    
 }
 .empass{
-    border: none;
-    outline: none;
-    border-bottom: 3px solid #ddd;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #ddd;
 }
 
 .info:hover {
-    transform: scale(1.02);
-    transition: all 0.1s ease;
+  transform: scale(1.02);
+  transition: all 0.1s ease;
 }
 
 
 
 
 #btn{
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top:25px ;
-    background-color: #dbdbee;
-    
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top:25px ;
+  background-color: #dbdbee;
+  
 }
 #btn:hover{
-    background-color: #9999ee;
-    color: white;
+  background-color: #9999ee;
+  color: white;
 }
 .login_form form label {
-    cursor: pointer;
+  cursor: pointer;
 }
 .login_form form p{
-    display: inline-block;
-    margin-left: 100px;
-    margin-top: 25px;
-    
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 25px;
+  
 }
 #signup {
-    text-decoration: none;
-    color:#0a0a3ada
+  text-decoration: none;
+  color:#0a0a3ada
 }
 #signup:hover {
-    background-color: #f176c2cc;
-    border-radius: 10px;
-    padding: 2px;
-    color: white;
-    text-decoration:underline ;
+  padding: 2px;
+  color: rgb(96, 32, 155);
+  text-decoration:underline ;
 }
 
-  
-  
 
-/*end login styles*/
+
+
+/*nd login styles*/
 
 /*start signup styles*/
 .signup_form{
-    background-color:rgb(194,210,255,0.7);
-    position: fixed;
-    top:-120%;
-    left: 0;
-    width:100%;
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 200;
+  background-color:rgb(194,210,255,0.7);
+  position: fixed;
+  top:-120%;
+  left: 0;
+  width:100%;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
 }
 .signup_form.active{
-    top:0;
+  top:0;
 }
 .signup_form form {
-    background-color:white;
-    border-radius: 2px;
-    margin: auto;
-    padding: 30px;
-    width: 40%;
-    height: 80%;
+  background-color:white;
+  border-radius: 2px;
+  margin: auto;
+  padding: 30px;
+  width: 40%;
+  height: 80%;
 }
 .signup_form form h1{
-    color:#003975;
-    font-size: 25px;
-    text-align: center;
-    padding-top: 30px;
+  color:#003975;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 30px;
 }
 .google {
-    color:#a187ffea;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 35px;
-    display: flex;
-    justify-content: center;
+  color:#a187ffea;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
 }
 .fa-google {
-    color: #d40303c5;
-     font-size: 30px;
-     
+  color: #d40303c5;
+   font-size: 30px;
+   
 }
 .google a{
-    text-decoration: none;
-    margin-top:7px;
+  text-decoration: none;
+  margin-top:7px;
 }
 .signupinfo {
-    width: 80%;
-    position: relative;
-    left: 5%;
-    outline: none;
-    display: block;
-    padding: 12px;
-    margin: 30px 15px 30px 15px;
-    
-    
-    
+  width: 80%;
+  position: relative;
+  left: 5%;
+  outline: none;
+  display: block;
+  padding: 12px;
+  margin: 30px 15px 30px 15px;
+  
+  
+  
 }
 .signupinfo:hover{
-    transform: scale(1.02);
-    transition: all 0.1s ease;
+  transform: scale(1.02);
+  transition: all 0.1s ease;
 }
 #agree:checked + label[for="agree"] {  
-    color: green;  
-    font-weight: bold;  
-    padding-left: 10px;
-  }  
-  .checkbox-group {  
-    padding-left: 40px;
-    display: flex;  
-    align-items: center; 
-    gap: 5px; 
-    cursor: pointer;
-  }  
-  .signup_form #form-close {
-    position: absolute;
-    right: 29%;
-    top: 8%;
-    font-size: large;
-    color:  #000038;
-    cursor: pointer;
-    align-items: center;
+  color: green;  
+  font-weight: bold;  
+  padding-left: 10px;
+}  
+.checkbox-group {  
+  padding-left: 40px;
+  display: flex;  
+  align-items: center; 
+  gap: 5px; 
+  cursor: pointer;
+}  
+.signup_form #form-close {
+  position: absolute;
+  right: 29%;
+  top: 8%;
+  font-size: large;
+  color:  #000038;
+  cursor: pointer;
+  align-items: center;
 }
 #form-close:hover{
-    color: red;
+  color: red;
 }
+
 
 /*end signup styles*/
 /*the begin of landing page styles*/
 header{
-    margin-top: 5rem;
-    padding-inline: 1rem;
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
+  margin-top: 5rem;
+  padding-inline: 1rem;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 header::before{
-    position: absolute;
-    content: "";
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transform:none;
-    background-image: url("header-bg.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 3rem;
-    z-index: -1;
+  position: absolute;
+  content: "";
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transform:none;
+  background-image: url("it\ picture\ landing\ page.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 3rem;
+  z-index: -1;
 }
 .headerContainer{
-    display: grid;
+  display: grid;
 }
 .headerContent{
-    padding: 4rem 1rem;
-    margin-top: 100px;
-    margin-left: 20px;
+  padding: 4rem 1rem;
+  margin-top: 100px;
+  margin-left: 20px;
 }
 .headerContent p{
-    margin-bottom: 5px;
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
-    text-align: center;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
+  text-align: center;
 }
 .headerContent h1{
-    margin-bottom: 2rem;
-    font-size: 3rem;
-    font-weight: 400;
-    color:black;
-    line-height: 5.5rem;
-    text-align: center ;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
+  color:black;
+  line-height: 5.5rem;
+  text-align: center ;
 }
 .headerBtns{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .headerBtns .h-btn{
-    padding: 1rem 2rem;
-    color:white;
-    background-color:rgb(44, 145, 227);
-    border-radius: 20px;
-    padding: 15px;
-    border: 0;
+  padding: 1rem 2rem;
+  color:white;
+  background-color:rgb(44, 145, 227);
+  border-radius: 20px;
+  padding: 15px;
+  border: 0;
 }
 .headerBtns button:hover{
-    color: rgb(44, 145, 227);
-    background-color:white;
+  color: rgb(44, 145, 227);
+  background-color:white;
 }
 .headerBtns a {
-    padding: 9px 13px;
-    font-size: 1.5rem;
-    color:white;
-    background-color: rgb(44, 145, 227);
-    border-radius:100%;
-    text-decoration: none;
+  padding: 9px 13px;
+  font-size: 1.5rem;
+  color:white;
+  background-color: rgb(44, 145, 227);
+  border-radius:100%;
+  text-decoration: none;
 }
 .headerBtns a:hover{
-    color: rgb(44, 145, 227);
-    background-color: white;
+  color: rgb(44, 145, 227);
+  background-color: white;
 }
 header{
-    margin-top: 0;
-    height: 100vh;
-    margin-left: 10px;
-    margin-right: 10px;
+  margin-top: 0;
+  height: 100vh;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .headerContainer{
-    grid-template-columns: 
-    minmax(0, 1fr)
-    repeat(5, minmax(0, calc(var(--max-width)/5)))
-    minmax(0, 1fr);
+  grid-template-columns: 
+  minmax(0, 1fr)
+  repeat(5, minmax(0, calc(var(--max-width)/5)))
+  minmax(0, 1fr);
 }
 .headerContent{
-    grid-column: 2/4;
-    padding-block: 8rem;
+  grid-column: 2/4;
+  padding-block: 8rem;
 }
 .headerContent :is(p,h1 ){
-    text-align: left;
+  text-align: left;
 }
 .headerBtns{
-    justify-content: flex-start;
+  justify-content: flex-start;
 }
 .headerImage{
-    grid-column: 4/8;
-    position: relative;
-    isolation: isolate;
-    height: 100%;
+  grid-column: 4/8;
+  position: relative;
+  isolation: isolate;
+  height: 100%;
 }
 .headerImage img{
-    position: absolute;
-    width:100%;
-    top: 2rem;
-    left: 0;
-    height: auto;
-    width: unset;
+  position: absolute;
+  width:100%;
+  top: 2rem;
+  left: 0;
+  height: auto;
+  width: unset;
 }
 /*the end of landing page*/
 /* Sarah`s turn */
 .sectionDiscription{
-    color: #55555569;
+  color: #55555569;
 }
 .sec_container_destination__container {  
-    justify-content: center;  
-    text-align: center;       
-  }
-  .sec_header{
-    font-size: 48px;
-    font-family: 'Popular Destination', sans-serif;
-  }
-  .usa {
-    color: #55555569;
-  }
- .paris {
-    color: #55555569;
-  }
- 
- .bali {
-    color: #55555569;
-  }
-  .destinationCard img {
-    border-radius: 1.5rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-  }
-  .destinationCardDetails {
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-  }
-  
-  .DestinationRating {
-    padding: 5px 10px;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    color: var(--white);
-    background-color: var(--primary-color);
-    border-radius: 1rem;
-    transition: 0.3s;
-  }
-  
-  .destinationCard:hover .DestinationRating {
-    background-color: var(--primary-color-dark);
-  }
+  justify-content: center;  
+  text-align: center;       
+}
+.sec_header{
+  font-size: 48px;
+  font-family: 'Popular Destination', sans-serif;
+}
+.usa {
+  color: #55555569;
+}
+.paris {
+  color: #55555569;
+}
+
+.bali {
+  color: #55555569;
+}
+.destinationCard img {
+  border-radius: 1.5rem;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.destinationCardDetails {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.DestinationRating {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  transition: 0.3s;
+}
+
+.destinationCard:hover .DestinationRating {
+  background-color: var(--primary-color-dark);
+}
 @media (max-width: 768px) {
-    .destinationGrid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .destinationGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (max-width: 480px) {
-    .destinationGrid {
-      grid-template-columns: 1fr;
-    }
+}
+
+@media (max-width: 480px) {
+  .destinationGrid {
+    grid-template-columns: 1fr;
   }
-  .destinationCard img {
-    height: 250px; 
-    object-fit: cover;
+}
+.destinationCard img {
+  height: 250px; 
+  object-fit: cover;
 }
 .destinationGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: start;
-}
-.journeyGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   justify-items: center;
-  align-items: stretch;
-  }
-  .journeyCard {
-    display: flex;
-  flex-direction: column;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  isolation: isolate;
-  transition: transform 0.3s;
-  } 
-  .journeyCard_bg {
-    padding: 2rem;
-    background-color: var(--extra-light);
-    border-top-right-radius: 1rem;
-    border-top-left-radius: 1rem;
-    flex: 1;
-  }
-  
-  .journeyCard_bg span {
-    display: inline-block;
-    margin-bottom: 4rem;
-    font-size: 1.75rem;
-    color: var(--primary-color);
-  } 
-  .journeyCard_bg h4 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-dark);
-  }
-  .journeyCardContent{
-    position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: var(--primary-color);
+  align-items: start;
+}
+.journeyGrid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+justify-items: center;
+align-items: stretch;
+}
+.journeyCard {
+  display: flex;
+flex-direction: column;
+height: 100%;
+overflow: hidden;
+position: relative;
+isolation: isolate;
+transition: transform 0.3s;
+} 
+.journeyCard_bg {
+  padding: 2rem;
+  background-color: var(--extra-light);
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  transition: top 0.3s;
-  padding: 2rem;
-  box-sizing: border-box;
-  }
-  
-  .journeyCard:hover .journeyCardContent {
-    top: 0;
-  }
-  .journeyCardContent span {
-    display: inline-block;
-    margin-bottom: 1rem;
-    padding: 7px 9px;
-    font-size: 1rem;
-    color: var(--white);
-    border: 2px solid var(--white);
-    border-radius: 100%;
-  }
-  
-  .journeyCardContent h4 {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--white);
-  }
-  
-  .journeyCardContent p {
-    color: var(--extra-light);
-  line-height: 1.5;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  }
-  .sectionDescription{
-    color: #55555569;
-  }
-  .journey{
-    justify-content: center;  
-    text-align: center;    
-  }
-  .sectionHeader {
-    font-size: 48px;
-    font-family: 'Journey To The Sky Made Simple!', sans-serif;
-  }
+  flex: 1;
+}
+
+.journeyCard_bg span {
+  display: inline-block;
+  margin-bottom: 4rem;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+} 
+.journeyCard_bg h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.journeyCardContent{
+  position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: var(--primary-color);
+border-top-right-radius: 1rem;
+border-top-left-radius: 1rem;
+transition: top 0.3s;
+padding: 2rem;
+box-sizing: border-box;
+}
+
+.journeyCard:hover .journeyCardContent {
+  top: 0;
+}
+.journeyCardContent span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 7px 9px;
+  font-size: 1rem;
+  color: var(--white);
+  border: 2px solid var(--white);
+  border-radius: 100%;
+}
+
+.journeyCardContent h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.journeyCardContent p {
+  color: var(--extra-light);
+line-height: 1.5;
+overflow-wrap: break-word;
+word-wrap: break-word;
+}
+.sectionDescription{
+  color: #55555569;
+}
+.journey{
+  justify-content: center;  
+  text-align: center;    
+}
+.sectionHeader {
+  font-size: 48px;
+  font-family: 'Journey To The Sky Made Simple!', sans-serif;
+}
