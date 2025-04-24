@@ -117,7 +117,7 @@ ScrollReveal().reveal(".showcase_btn", {
 });
 scrollReveal().reveal(".banner_card", {
   ...scrollRevealOption,
-  delay: 500,
+  interval: 500,
 });
 
 
