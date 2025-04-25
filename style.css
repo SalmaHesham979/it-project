@@ -1,10 +1,10 @@
-:root {
+ :root{
   --primary-color: #2887ff;
   --primary-color-dark: #2476da;
   --text-dark: #0a0a0a;
   --text-light: #737373;
   --extra-light: #f3f4f6;
-  --white: #ffffff;
+  --white:root #ffffff;
   --max-width: 1200px;
 }
 *{
@@ -15,9 +15,7 @@
 
 .header{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
+  justify-content: white;
   padding: 20px;
 }
 .logo{
@@ -596,17 +594,20 @@ word-wrap: break-word;
 .discover__grid{
   margin-top: 4rem; 
   display:grid; 
-  gap:4rem 2rem; 
+  gap: 2rem; 
  }
+
  .discover__card{
   padding:2rem 1rem;
   text-align: center; 
   transition: 0.3s;
   border-radius: 1rem;
  }
+
  .discover__card:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
+
 .discover__card span{
   display: inline-block;
   margin-bottom: 1rem;
@@ -615,8 +616,8 @@ word-wrap: break-word;
   color: var(--primary-color);
   background-color: rgba(40,135,255,0.1);
   border-radius: 100%;
-  flex-wrap: wrap;
 }
+
 .discover__card h4{
   max-width: 150px;
   margin-inline: auto;
@@ -624,29 +625,25 @@ word-wrap: break-word;
   font-size: 1.2rem;
   font-weight: 700;
   color:var(--text-dark);
- 
  }
+
  .destination__Card p{
   color: var(--text-light);
-
 }
 
 .swiper{
   margin-top: 4rem;
-  width: 100%;
-  flex-wrap:nowrap;
-  gap: 20px;
-  justify-content: center;
-  padding: 2rem;
-  display: flex;
-  overflow-x: auto;
+  width: 25%;
 }
+.swiper-wrapper{
+  display: flex;
+  flex-wrap: nowrap;
+}
+ 
 
 .swiper-slide{
   min-width: 375px;
-  width: 300px;
-  margin-right: 1rem;
-  scroll-snap-align: start;
+  width: 100px;
 }
 
 .client__card{
@@ -671,7 +668,7 @@ margin-bottom: 1rem;
 color: var(--primary-color);
 }
 
-.client__content{
+.client__content p{
 color: var(--text-dark);
 }
 
@@ -683,7 +680,7 @@ gap: 1rem;
 }
 
 .client__details img{
-  max-width: 50px;
+  max-width: 80px;
   border-radius: 100%;
 }
 
