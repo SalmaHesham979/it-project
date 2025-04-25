@@ -42,12 +42,14 @@ function hideform(){
 function signupshow(){
     loginform.classList.remove("active");
     signupform.classList.add("active");
+    
 }
 
 /* zorar el (x) */
 function signuphide(){
     signupform.classList.remove("active");
     document.querySelector('.signup_form form').reset();
+    
 }
 
 
@@ -61,6 +63,7 @@ function hide_from_signup(){
     if(email !== '' && password !== '' && username !== '' && agree) {  
         signupform.classList.remove("active");
         document.querySelector('.signup_form form').reset();
+        
         return true;
       } else {  
         alert("Please provide the following to verify your identity"); 
