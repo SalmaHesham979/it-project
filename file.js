@@ -118,14 +118,12 @@ ScrollReveal().reveal(".showcase_btn", {
 scrollReveal().reveal(".banner_card", {
   ...scrollRevealOption,
   interval: 500,
-})
 
 ;scrollReveal().reveal(".discover_card", {
   ...scrollRevealOption,
   interval: 500,
 });
 
-const swiper = new Swiper(".swiper",{
   Slidesperview:3,
   SpaceBetween:20,
   loop:true,
