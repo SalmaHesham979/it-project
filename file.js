@@ -132,11 +132,5 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
   loop: true,
 });
-const btn =document.querySelector(".button");
-const feedback =document.querySelector(".feedbak_container");
-btn.addEventListener("click",() => {
-  feedback.innerHTML =<h2> Thank you for your feedback</h2>
-});
-
 
 
