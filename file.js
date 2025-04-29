@@ -97,6 +97,17 @@ ScrollReveal().reveal(".headerBtns", {
   delay: 1500,
 });
 /*the end of landing page*/
+// salma mohamed
+const bookingType = document.getElementById("booking_type");
+
+bookingType.addEventListener("click", (e) => {
+  Array.from(bookingType.getElementsByTagName("div")).forEach((item) => {
+    item.classList.remove("active");
+  });
+
+  e.target.classList.add("active");
+});
+// salma mohamed
 // sarah`s turn
 ScrollReveal().reveal(".destinationCard", {
   ...scrollRevealOption,
