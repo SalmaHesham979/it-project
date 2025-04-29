@@ -379,6 +379,134 @@ header{
   width: unset;
 }
 /*the end of landing page*/
+/* salma mohamed */
+  
+
+*{ margin:0;
+  padding: 0;
+  box-sizing: border-box;}
+html{
+    scroll-behavior: smooth;
+  }
+
+.samheader{
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.947),
+    rgba(122, 145, 188, 0.7),
+    rgba(255, 255, 255, 0.947)
+      
+  ),
+  url(map.png);
+  margin-right: 5px;
+  margin-left: 2px;
+  background-position: center center ;
+ background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.SectionContainer{
+  padding-top: 2rem;
+  max-width: 100%;
+}
+.SectionContainer h2{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color:rgb(15, 15, 79);
+  text-align: center;
+}
+.SectionContainer p{
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  color:rgb(34, 34, 81) ;
+  text-align: center;
+}
+.booking{
+  max-width: 700px;
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: grid;
+  gap: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+}
+.booking_type{
+  width: fit-content ;
+  padding: 5px;
+  display: grid;
+  grid-template-columns:max-content max-content max-content ;
+  align-items: center;
+  background-color: #5484dd;
+  border-radius: 12px;
+}
+.booking_type > div{
+  padding: 10px;
+  color:white ;
+  border-radius:22px;
+  cursor:pointer;
+  transition: 0.3s;
+}
+.booking_type >:is(div:hover,div.active){
+  color:#5484dd;
+  background-color:white ;
+  
+}
+.bookingform{
+  padding: 1.5rem 1rem; 
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  background-color:rgba(255, 255, 255, 0.296);
+  border-radius:12px;
+}
+
+
+.form_inputs{
+  display: grid;
+  gap: 5px;
+}
+.form_inputs label{
+  font-size: 0.9rem;
+  font-weight: 500;
+  color:#002147;
+}
+.form_inputs input{
+  width: 100%;
+  padding: 0.5rem;
+  font-size: #333333;
+  color: #002147;
+  outline: none;
+  border: 1px solid #f5f6f8;
+  border-radius: 12px;
+}
+
+.Reserve_btn{
+  text-align: right;
+
+}
+.anotherbutton{
+  background-color: #5484dd;
+  color: white;
+  border: none;;
+  padding: 10px ;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  transition: 0.3;
+}
+.anotherbutton:hover {
+  background-color:white;
+  color: #5484dd;
+
+}
+/* salma mohamed */
 /* Sarah`s turn */
 .sectionDiscription{
   color: #55555569;
