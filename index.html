@@ -1,461 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <title>travel agency</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <title>travel agency</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <!--rawan section navbar&login-->
+
 <body>
-    <div class="header">
-        <h2 class="logo">eqypt<span id="">air</span></h2>
-        <nav class="navbar">
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#package">package</a>
-            <a href="#contact">contact</a>
-            <a href="#booking_table">booking</a>
-           <button class="nav_login" onclick="showform()">login</button>
-        </nav>
+  <div class="header">
+    <h2 class="logo">eqypt<span id="">air</span></h2>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#package">package</a>
+      <a href="#contact">contact</a>
+      <a href="#booking_table">booking</a>
+      <button class="nav_login" onclick="showform()">login</button>
+    </nav>
+  </div>
+  <!--log in form-->
+  <div>
+    <div class="login_form">
+      <form>
+        <div>
+          <span id="form-close" onclick="hideform()">&#10005;</span>
         </div>
-        <!--log in form-->
-        <div><div class="login_form" >
-            <form>
-                <div>
-                    <span  id="form-close" onclick="hideform()">&#10005;</span>
-                </div>
-                
-            <h3>LOG IN</h3>
-            <input type="email" placeholder="Enter your email" class="info empass"  id="email"  required >
-            <input type="password" placeholder="Enter your password" class="info empass" id="password" required minlength="8" maxlength="15">
-            <input type="submit"  class="info"  id="btn" value="Log in now" onclick="hide()">
-            <input type="checkbox" id="remember">
-            <label for="remember">remember me</label>
-            <p>
-            <p>don't have an account?</p> <a href="#" id="signup" onclick="signupshow()">sign up</a>
-            </p>
-             </form>
 
-        </div>
-<!--end log in form-->
+        <h3>LOG IN</h3>
+        <input type="email" placeholder="Enter your email" class="info empass" id="email" required>
+        <input type="password" placeholder="Enter your password" class="info empass" id="password" required
+          minlength="8" maxlength="15">
+        <input type="submit" class="info" id="btn" value="Log in now" onclick="hide()">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me</label>
+        <p>
+        <p>don't have an account?</p> <a href="#" id="signup" onclick="signupshow()">sign up</a>
+        </p>
+      </form>
 
-<!-- start sign up form-->
-<div><div class="signup_form">
-  <form>
-      <div>
-          <span  id="form-close" onclick="signuphide()">&#10005;</span>
+    </div>
+    <!--end log in form-->
+
+    <!-- start sign up form-->
+    <div>
+      <div class="signup_form">
+        <form>
+          <div>
+            <span id="form-close" onclick="signuphide()">&#10005;</span>
+          </div>
+          <h1>Sign up</h1>
+          <input type="text" placeholder="Full Name" class="signupinfo empass" id="username" required autofocus>
+          <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em" required>
+          <input type="password" placeholder="Enter your password" class="signupinfo empass" id="pass" required>
+          <div class="checkbox-group">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">I agree the terms and conditions</label>
+          </div>
+          <input type="submit" class="info" id="btn" value="Sign up" onclick="hide_from_signup()">
+          <br> <br>
+          <hr>
+          <div class="google">
+            <i class="fab fa-google"></i>
+            <a href="https.google"><span>Sign in with Google</span></a>
+          </div>
+        </form>
+
       </div>
-  <h1>Sign up</h1>
-  <input type="text" placeholder="Full Name" class="signupinfo empass" id="username"  required autofocus>
-  <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em"  required >
-  <input type="password" placeholder="Enter your password" class="signupinfo empass"  id="pass" required >
-  <div class="checkbox-group">
-      <input type="checkbox" id="agree" required>
-      <label for="agree">I agree the terms and conditions</label>
-  </div>
-  <input type="submit"  class="info"  id="btn" value="Sign up" onclick="hide_from_signup()">
-   <br> <br> <hr>
-  <div class="google">
-      <i class="fab fa-google"></i>
-     <a href="https.google"><span>Sign in with Google</span></a>
-  </div>
-   </form>
 
-</div>
+      <!--end sign up form-->
 
-<!--end sign up form-->
-
-<!-- الي بعدي يبدأ من هنا-->
- <!-- salma hesham landing page -->
- <link
- href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
- rel="stylesheet"/>
-  <header id="home">
-  <div class="headerContainer">
-    <div class="headerContent">
-        <p>EXPERIENCE THE ART OF LUXURIOUS TRAVEL.</p>
-        <h1>Premium Comfort</h1>
-        <div class="headerBtns">
-            <button class="h-btn">Book A Trip Now!</button>
-            <a href="#booking_table">
+      <!-- الي بعدي يبدأ من هنا-->
+      <!-- salma hesham landing page -->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+      <header id="home">
+        <div class="headerContainer">
+          <div class="headerContent">
+            <p>EXPERIENCE THE ART OF LUXURIOUS TRAVEL.</p>
+            <h1>Premium Comfort</h1>
+            <div class="headerBtns">
+              <button class="h-btn">Book A Trip Now!</button>
+              <a href="#booking_table">
                 <span><i class="ri-play-circle-fill"></i></span>
-            </a>
+              </a>
+            </div>
+          </div>
+          <div class="headerImage">
+            <img src="airplane.png" alt="header" />
+          </div>
         </div>
-    </div>
-    <div class="headerImage">
-        <img src="airplane.png" alt="header"/>
-    </div>
-  </div>
-  </header>
-  <!-- the end of the landing page -->
-    <!-- salma mohamed -->
-  <section class="samheader">
-    <div class="SectionContainer" id="booking_table">
-        <h2>From Anywhere to Everywhere , Your Journey Starts Here.</h2>
-        <p>Discover New Horizons — Safe, Easy, and Hassle-Free</p>
-        <div class="booking">
+
+      <!-- salma mohamed -->
+      <section class="samheader">
+        <div class="SectionContainer" id="booking_table">
+          <h2>From Anywhere to Everywhere , Your Journey Starts Here.</h2>
+          <p>Discover New Horizons — Safe, Easy, and Hassle-Free</p>
+          <div class="booking">
             <div class="booking_type" id="booking_type">
-                <div class="active"> One Way</div>
-                <div > Round trip</div>
-                <div>Multi Destination</div>
+              <div class="active"> One Way</div>
+              <div> Round trip</div>
+              <div>Multi Destination</div>
             </div>
             <form action="" class="bookingform">
-                <div class="form_inputs">
-                        <label for="arrival">To</label>
-                        <input type="text" placeholder="ARRIVAL">
-                    </div>
-                <div class="form_inputs">
-                    <label for="departure">From</label>
-                    <input type="text" placeholder="DEPARTURE">
-                </div>
-                <div class="form_inputs">
-                    <label for="date">Date</label>
-                    <input type="date" placeholder="DATE">
-                </div>
-                <div class="form_inputs">
-                    <label for="class">Class</label>
-                    <input type="text" placeholder="CLASS">
-                </div>
-           </form>
-           <div class="Reserve_btn">
-            <button class="anotherbutton">Reserve Flight</button>
-           </div>
+              <div class="form_inputs">
+                <label for="arrival">To</label>
+                <input type="text" placeholder="ARRIVAL">
+              </div>
+              <div class="form_inputs">
+                <label for="departure">From</label>
+                <input type="text" placeholder="DEPARTURE">
+              </div>
+              <div class="form_inputs">
+                <label for="date">Date</label>
+                <input type="date" placeholder="DATE">
+              </div>
+              <div class="form_inputs">
+                <label for="class">Class</label>
+                <input type="text" placeholder="CLASS">
+              </div>
+            </form>
+            <div class="Reserve_btn">
+              <button class="anotherbutton">Reserve Flight</button>
+            </div>
+          </div>
         </div>
-    </div>
-  </section>
-   
-   <!-- salma mohamed -->
-<!-- Sarah`s turn -->
- <section class="sec_container_destination__container" id="about">
-  
-    <h2 class="sec_header">Top Travel Treasures</h2> 
-    <p class="sectionDiscription" >
-     Uncover The places Everyone's Talking about
-    </p>
+      </section>
 
-   <br>
-   <div class="destinationGrid">
-    <div class="destinationCard">
-        <img src="photo_2025-04-23_23-09-25.jpg" alt="destination" >
-        <div class="destinationCardDetails">
-            <div>
+      <!-- salma mohamed -->
+      <!-- Sarah`s turn -->
+      <section class="sec_container_destination__container" id="about">
+
+        <h2 class="sec_header">Top Travel Treasures</h2>
+        <p class="sectionDiscription">
+          Uncover The places Everyone's Talking about
+        </p>
+
+        <br>
+        <div class="destinationGrid">
+          <div class="destinationCard">
+            <img src="photo_2025-04-23_23-09-25.jpg" alt="destination">
+            <div class="destinationCardDetails">
+              <div>
                 <h4>Timeless Hustle</h4>
                 <p class="usa">New york City , USA</p>
-            </div>
-            <div class="DestinationRating">
+              </div>
+              <div class="DestinationRating">
                 <span><i class="ri-star-fill"></i></span>
                 4.5
+              </div>
             </div>
-        </div>
-    </div>
- 
-    <div class="destinationCard">
-        <img src="photo_2025-04-23_23-09-18.jpg" alt="destination"  >
-        <div class="destinationCardDetails">
-            <div>
+          </div>
+
+          <div class="destinationCard">
+            <img src="photo_2025-04-23_23-09-18.jpg" alt="destination">
+            <div class="destinationCardDetails">
+              <div>
                 <h4>Dream City</h4>
-              <p class="paris">Paris, France</p>
-            </div>
-            <div class="DestinationRating">
+                <p class="paris">Paris, France</p>
+              </div>
+              <div class="DestinationRating">
                 <span><i class="ri-star-fill"></i></span>
                 4.8
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
 
-    <div class="destinationCard">
-        <img src="photo_2025-04-23_23-09-30.jpg" alt="destination" >
-        <div class="destinationCardDetails">
-            <div>
+          <div class="destinationCard">
+            <img src="photo_2025-04-23_23-09-30.jpg" alt="destination">
+            <div class="destinationCardDetails">
+              <div>
                 <h4>Nature's Embrace</h4>
                 <p class="bali">Bali, Indonesia</p>
-            </div>
-            <div class="DestinationRating">
+              </div>
+              <div class="DestinationRating">
                 <span><i class="ri-star-fill"></i></span>
                 5.0
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-   </div>
- </section> 
- <section class="journey" id="tour">
-    <h2 class="sectionHeader">Journey To The Sky Made Simple!</h2>
-    <p class="sectionDescription">
-      Effortless Planning for Your Next Adventure
-    </p> <br> <br>
-    <div class="journeyGrid">
-      <div class="journeyCard">
-        <div class="journeyCard_bg">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4>Quick & Easy Booking</h4>
+      </section>
+      <section class="journey" id="tour">
+        <h2 class="sectionHeader">Journey To The Sky Made Simple!</h2>
+        <p class="sectionDescription">
+          Effortless Planning for Your Next Adventure
+        </p> <br> <br>
+        <div class="journeyGrid">
+          <div class="journeyCard">
+            <div class="journeyCard_bg">
+              <span><i class="ri-bookmark-3-line"></i></span>
+              <h4>Quick & Easy Booking</h4>
+            </div>
+            <div class="journeyCardContent">
+              <span><i class="ri-bookmark-3-line"></i></span>
+              <h4>Plan Less, Tavel More</h4>
+              <p>
+                With instant access to all your travel needs,
+                your next adventure is just a click away.
+              </p>
+            </div>
+          </div>
+          <div class="journeyCard">
+            <div class="journeyCard_bg">
+              <span><i class="ri-landscape-fill"></i></span>
+              <h4>Custom travel plans</h4>
+            </div>
+            <div class="journeyCardContent">
+              <span><i class="ri-landscape-fill"></i></span>
+              <h4>Travel Plans Made for You</h4>
+              <p>
+                Embark on a journey crafted around your unique style.
+                From thrilling trips to immersive cultural escapes.
+              </p>
+            </div>
+          </div>
+          <div class="journeyCard">
+            <div class="journeyCard_bg">
+              <span><i class="ri-map-2-line"></i></span>
+              <h4>Authentic local expertise</h4>
+            </div>
+            <div class="journeyCardContent">
+              <span><i class="ri-map-2-line"></i></span>
+              <h4>Local Favorites & Expert Picks</h4>
+              <p>
+                Discover handpicked spots for dining, exploring, and uncovering hidden treasures
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="journeyCardContent">
-          <span><i class="ri-bookmark-3-line"></i></span>
-          <h4>Plan Less, Tavel More</h4>
+      </section>
+      <section class="showcase_container" id="package">
+        <div class="showsea_image">
+          <img src="showsea.jpg" alt="showsea">
+        </div>
+        <div class="showcase_content">
+          <h3>Ingite Your Passion for Travel with SkyWings</h3>
           <p>
-           With instant access to all your travel needs,
-           your next adventure is just a click away.
+            Set your sights on extraordinary journeys with Skywings – where travel becomes more than just a destination.
+            Our purpose is to ignite your passion for exploration and make every trip a story worth telling. Whether
+            you’re drawn to the lively pulse of iconic cities, the peaceful charm of hidden coastlines, or the rich
+            legacy of ancient wonders, Skywings is here to guide you every step of the way.
+            With thoughtfully chosen destinations and tailor-made itineraries, we craft experiences that reflect your
+            personal style and interests. Uncover secret treasures, embrace new cultures, and build timeless memories
+            that stay with you forever.
+          </p>
+          <p>
+            With Skywings by your side, discovering the world becomes a smooth and inspiring adventure.
+            Our expert guidance and local knowledge empower you to explore new destinations with ease and curiosity.
+            From the initial planning stages to your return home, we’re here to ensure every step of your journey is
+            effortless, enriching, and unforgettable.
+            Let us handle the details while you focus on experiencing the magic of travel like never before.
+          </p>
+          <div class="showcase_btn">
+            <button class="btn">
+              Adventure starts with a ticket!
+              <span>
+                <i class="ri-arrow-right-line"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="banner_container">
+        <div class="banner_card">
+          <h3>8+</h3>
+          <p>
+            Years Experience
           </p>
         </div>
-      </div>
-      <div class="journeyCard">
-        <div class="journeyCard_bg">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4>Custom travel plans</h4>
+        <div class="banner_card">
+          <h3>18k</h3>
+          <p>Satisfied Clients</p>
         </div>
-        <div class="journeyCardContent">
-          <span><i class="ri-landscape-fill"></i></span>
-          <h4>Travel Plans Made for You</h4>
-          <p>
-            Embark on a journey crafted around your unique style.
-            From thrilling trips to immersive cultural escapes.
-          </p>
+        <div class="banner_card">
+          <h3>
+            4.9
+          </h3>
+          <p>Overall Ratings</p>
         </div>
-      </div>
-      <div class="journeyCard">
-        <div class="journeyCard_bg">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4>Authentic local expertise</h4>
-        </div>
-        <div class="journeyCardContent">
-          <span><i class="ri-map-2-line"></i></span>
-          <h4>Local Favorites & Expert Picks</h4>
-          <p>
-            Discover handpicked spots for dining, exploring, and uncovering hidden treasures
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="showcase_container" id="package">
-    <div class="showsea_image">
-      <img src="showsea.jpg" alt="showsea">
-    </div>
-    <div class="showcase_content">
-      <h3>Ingite Your Passion for Travel with SkyWings</h3>
-      <p>
-        Set your sights on extraordinary journeys with Skywings – where travel becomes more than just a destination.
-        Our purpose is to ignite your passion for exploration and make every trip a story worth telling. Whether you’re drawn to the lively pulse of iconic cities, the peaceful charm of hidden coastlines, or the rich legacy of ancient wonders, Skywings is here to guide you every step of the way.
-        With thoughtfully chosen destinations and tailor-made itineraries, we craft experiences that reflect your personal style and interests. Uncover secret treasures, embrace new cultures, and build timeless memories that stay with you forever.
-      </p>
-      <p>
-        With Skywings by your side, discovering the world becomes a smooth and inspiring adventure.
-        Our expert guidance and local knowledge empower you to explore new destinations with ease and curiosity. From the initial planning stages to your return home, we’re here to ensure every step of your journey is effortless, enriching, and unforgettable.
-        Let us handle the details while you focus on experiencing the magic of travel like never before.
-      </p>
-      <div class="showcase_btn">
-        <button class="btn">
-          Adventure starts with a ticket!
-        <span> 
-          <i class="ri-arrow-right-line"></i>
-        </span>
-        </button>
-      </div>
-    </div>
-  </section>
-  <section class="banner_container">
-    <div class="banner_card">
-      <h3>8+</h3>
-      <p>
-        Years Experience
-      </p>
-    </div>
-    <div class="banner_card">
-      <h3>18k</h3>
-      <p>Satisfied Clients</p>
-    </div>
-    <div class="banner_card">
-      <h3>
-        4.9
-      </h3>
-      <p>Overall Ratings</p>
-    </div>
-  </section>
-   <!-- salma yasser's turn  -->
-  <section class="section__container discover__container">
-    <h2 class="section__header">Discover the world from above</h2>
-    <p class="section__description" > 
-      Experience Breathtaking views and unique perspectives
-    </p>
-    <div class="discover__grid">
-      <div class="discover__card">
-        <span><i class="ri-camera-lens-line"></i></span>
-        <h4>city views from above</h4>
-        <p>
-          From above,the city unfolds like a living map <br>
-          lights flicker,streets flow,and stories intertwine.
+      </section>
+      <!-- salma yasser's turn  -->
+      <section class="section__container discover__container">
+        <h2 class="section__header">Discover the world from above</h2>
+        <p class="section__description">
+          Experience Breathtaking views and unique perspectives
         </p>
-      </div>
-      <div class="discover__card">
-        <span><i class="ri-ship-line"></i></span>
-        <h4>Costal Wonders</h4>
-        <p>
-          Soar above crystal shores where waves kiss the sand <br>
-          and secrets lie beneath the blue.
-        </p>
-      </div>
-      <div class="discover__card">
-        <span><i class="ri-landscape-line"></i></span>
-        <h4>Historic Landmarks</h4>
-        <p>
-        From the skies,uncover the silent strength of stone <br>
-        walls and forgotten fortresses witness relics of the past From<br>
-        an elevated view,where every shadow tells a tale.
-      </p>
-    </div>    
-  </div>
- </section>
+        <div class="discover__grid">
+          <div class="discover__card">
+            <span><i class="ri-camera-lens-line"></i></span>
+            <h4>city views from above</h4>
+            <p>
+              From above,the city unfolds like a living map <br>
+              lights flicker,streets flow,and stories intertwine.
+            </p>
+          </div>
+          <div class="discover__card">
+            <span><i class="ri-ship-line"></i></span>
+            <h4>Costal Wonders</h4>
+            <p>
+              Soar above crystal shores where waves kiss the sand <br>
+              and secrets lie beneath the blue.
+            </p>
+          </div>
+          <div class="discover__card">
+            <span><i class="ri-landscape-line"></i></span>
+            <h4>Historic Landmarks</h4>
+            <p>
+              From the skies,uncover the silent strength of stone <br>
+              walls and forgotten fortresses witness relics of the past From<br>
+              an elevated view,where every shadow tells a tale.
+            </p>
+          </div>
+        </div>
+      </section>
 
- <section class="section__container client__container">
-  <h2 class="section__header">Loved By Over Thousand Travelers</h2>
-  <p class="section__description">
-    Explore unforgettable adventures,seen through the 
-   stories of our happy,travel-loving clients.
-  </p>
-  <!-- Slider main container -->
-  <div class="swiper">
-   <!-- Additional required wrapper -->
-   <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <div class="client__card">
-        <div class="client__content">
-          <div class="client__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-          </div> 
-          <p>
-            Traveling with EgyptAir felt like unlocking a new world.<br>
-            From vibrant city corners to peaceful, hidden escapes,
-            every step was perfectly planned.<br>
-            Their attention to detail made all the difference.<br>
-            I’d choose EgyptAir again without hesitation!
-          </p>
-        </div>
-        <div class="client__details">
-          <img src="marvel.jpg" alt="client" />
-          <div>
-            <h4> Marvel Adams</h4>
-            <h5>Travel Blogger</h5>
+      <section class="section__container client__container">
+        <h2 class="section__header">Loved By Over Thousand Travelers</h2>
+        <p class="section__description">
+          Explore unforgettable adventures,seen through the
+          stories of our happy,travel-loving clients.
+        </p>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__content">
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <p>
+                    Traveling with EgyptAir felt like unlocking a new world.<br>
+                    From vibrant city corners to peaceful, hidden escapes,
+                    every step was perfectly planned.<br>
+                    Their attention to detail made all the difference.<br>
+                    I’d choose EgyptAir again without hesitation!
+                  </p>
+                </div>
+                <div class="client__details">
+                  <img src="marvel.jpg" alt="client" />
+                  <div>
+                    <h4> Marvel Adams</h4>
+                    <h5>Travel Blogger</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__content">
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <p>
+                    My latest journey with EgyptAir was absolutely unforgettable.<br>
+                    From the meticulously crafted itineraries to the amazing recommendations they provided,<br>
+                    I was taken to some truly hidden gems that I could never have found without their help.
+                  </p>
+                </div>
+                <div class="client__details">
+                  <img src="lina.jpg" alt="client" />
+                  <div>
+                    <h4>lina toni </h4>
+                    <h5>Adventure Enthusiast</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__content">
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <p>
+                    EgyptAir offered a transformative experience for my research<br>
+                    into historical landmarks. The unique aerial perspectives and<br>
+                    provided a new level of appreciation and insight into the
+                    sites I studied.
+                  </p>
+                </div>
+                <div class="client__details">
+                  <img src="maya.jpg" alt="client" />
+                  <div>
+                    <h4>Maya Lee</h4>
+                    <h5>Cultural Historian</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__content">
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <p>
+                    Finding a balance between work and travel can be challenging,<br>
+                    but EgyptAir made it effortless. Their efficient planning and<br>
+                    excellent recommendations helped me maximize my downtime and
+                    enjoy every moment of my trip.
+                  </p>
+                </div>
+                <div class="client__details">
+                  <img src="david (2).jpg" alt="client" />
+                  <div>
+                    <h4>David Patel</h4>
+                    <h5>Business Executive</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>  
-    <div class="swiper-slide">
-      <div class="client__card">
-        <div class="client__content">
-          <div class="client__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-          </div>
-          <p>
-            My latest journey with EgyptAir was absolutely unforgettable.<br>
-            From the meticulously crafted itineraries to the amazing recommendations they provided,<br>
-            I was taken to some truly hidden gems that I could never have found without their help.
-          </p>
+      </section>
+      <div class="feedback_container">
+        <div class="feedback_form">
+        <h2>Give us your feedback</h2>
+        <p>your feedback is very important to us</p>
+        <div class="emoji_box">
+          <button class="btn_normal">&#128578;</button>
+          <button class="btn_normal">&#128515;</button>
+          <button class="btn_normal">&#128519;</button>
+          <button class="btn_normal">&#128531;</button>
+          <button class="btn_normal">&#128532;</button>
+          <button class="btn_normal">&#128545;</button>
         </div>
-        <div class="client__details">
-          <img src="lina.jpg" alt="client" />
-          <div>
-            <h4>lina toni </h4>
-            <h5>Adventure Enthusiast</h5>
+        <p class="question">What you want to say?</p>
+        <textarea id="textarea" cols="20" rows="5"></textarea>
+        <p class="question">Are you want to share it publickly?</p>
+        <div class="radio_btns">
+          <div class="one_btn">
+            <input type="radio" name="one" id="YES" />
+            <label for="YES">YES</label>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="client__card">
-        <div class="client__content">
-          <div class="client__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-          </div>
-          <p>
-            EgyptAir offered a transformative experience for my research<br>
-            into historical landmarks. The unique aerial perspectives and<br>
-            provided a new level of appreciation and insight into the
-            sites I studied.
-          </p>
-        </div>
-        <div class="client__details">
-          <img src="maya.jpg" alt="client" />
-          <div>
-            <h4>Maya Lee</h4>
-            <h5>Cultural Historian</h5>
+          <div class="one_btn">
+            <input type="radio" name="one" id="NO" />
+            <label for="NO">NO</label>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="client__card">
-        <div class="client__content">
-          <div class="client__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-          </div>
-          <p>
-            Finding a balance between work and travel can be challenging,<br>
-            but EgyptAir made it effortless. Their efficient planning and<br>
-            excellent recommendations helped me maximize my downtime and
-            enjoy every moment of my trip. 
-          </p>
-        </div>
-        <div class="client__details">
-          <img src="david (2).jpg" alt="client" />
-          <div>
-            <h4>David Patel</h4>
-            <h5>Business Executive</h5>
-           </div>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
-<div class="feedback_container">
-  <h2>Give us your feedback</h2>
-  <p>your feedback is very important to us</p>
-  <div class="emoji_box">
-      <button class="btn_normal">&#128578;</button>
-      <button class="btn_normal">&#128515;</button>
-      <button class="btn_normal">&#128519;</button>
-      <button class="btn_normal">&#128531;</button>
-      <button class="btn_normal">&#128532;</button>
-      <button class="btn_normal">&#128545;</button>
-  </div>
-  <p class="question">What you want to say?</p>
-  <textarea id="textarea" cols="20" rows="5"></textarea>
-  <p class="question">Are you want to share it publickly?</p>
-  <div class="radio_btns">
-      <div class="one_btn">
-          <input type="radio" name="one" id="YES"/>
-          <label for="YES">YES</label>
-      </div>
-      <div class="one_btn">
-          <input type="radio" name="one" id="NO"/>
-          <label for="NO">NO</label>
-      </div>
-  </div>
-  <div class="info_field">
-      <div class="name">
-          <label>
+        <div class="info_field">
+          <div class="name">
+            <label>
               <input type="text" placeholder=" ">
               <span>Nickname</span>
           </label>
@@ -492,13 +504,120 @@
         <div class="image">
           <img src="Free Vector _ Hand drawn train collection.jpg" alt="">
           <h1 class="avl">Available<span class="hor"> 24</span> hours</h1>
-        </div>
 
+            </label>
+          </div>
+          <div class="email">
+            <label>
+              <input type="email" placeholder=" ">
+              <span>Email address(will not be puplished)</span>
+            </label>
+          </div>
+        </div>
+        <div class="accept">
+          <input type="radio" id="accept">
+          <label>I accept the <a href="#">terms and conditions</a></label>
+        </div>
+        <div class="center">
+          <button class="btn_button">send</button>
+        </div>
+        </div>
+        <div class="fd_image">
+          <img src="fb_image.jfif" alt="feedback_image">
+        </div>
       </div>
- </section>
-<!--(contact section ends)-->
-<script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="file.js"></script>
- </body>
+      <!--Reem's turn(contact section starts)-->
+      <section class="contact" id="contact">
+
+        <h1 class="heading"><span style="color: rgb(219, 112, 147);">contact</span> us</h1>
+
+        <div class="row">
+
+          <form action="">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+          </form>
+          <div class="image">
+            <img src="Free Vector _ Hand drawn train collection.jpg" alt="">
+            <h1 class="avl">Available<span class="hor"> 24</span> hours</h1>
+          </div>
+
+        </div>
+      </section>
+      <!--(contact section ends)-->
+      <!-- ziad -->
+      <footer id="contect">
+        <div class="section__container footer__container">
+          <div class="footer__col">
+            <div class="footer__logo">
+              <a href="#" class="logo" id="zzz">eqyptair</a>
+            </div>
+            <p>
+              Explore the world with EgyptAir – your trusted travel companion. At EgyptAir, we believe that every
+              journey should be unforgettable. With decades of experience in the aviation and travel industry, we offer
+              seamless travel planning, exceptional customer service, and access to some of the world’s most exciting
+              destinations. Whether you're seeking adventure, relaxation, or cultural discovery, EgyptAir is here to
+              make your travel dreams come true. Let us handle the details while you enjoy the experience – fly with us
+              and discover the world in comfort, safety, and style.
+
+            </p>
+            <ul class="footer__socials">
+              <li>
+                <a href="#"><i class="ri-facebook-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-instagram-fill"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Quick Links</h4>
+            <ul class="footer__links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Flights</a></li>
+              <li><a href="#">Hotels</a></li>
+              <li><a href="#">Cruise</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4 id="zz">Contact Us</h4>
+            <ul class="footer__links">
+              <li><a href="#">
+                  <span><i class="ri-phone-fill"></i></span> 01028242958
+                </a>
+              </li>
+              <li><a href="#">
+                  <span><i class="ri-record-mail-fill"></i></span> eqyptair@gmail.com
+                </a>
+              </li>
+              <li><a href="#">
+                  <span><i class="ri-map-pin-2-fill"></i></span> egypt-cairo-ainshams
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>subscribe</h4>
+            <form action="/">
+              <input type="text" placeholder="Enter Your Email">
+              <button class="btn">subscribe</button>
+            </form>
+          </div>
+        </div>
+        <!-- شايف انها ملهالش لازمه  -->
+        <div class="footer__bar">
+          copy right 2025 helwan it team
+        </div>
+      </footer>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="file.js"></script>
+</body>
+
 </html>
