@@ -1021,9 +1021,28 @@
  }
 
  .feedback_container {
+  display: flex;
+  justify-content: space-between;
    border-radius: 1rem;
    background-color: #fff;
    padding: 2rem 3rem;
+  align-items: center;
+ }
+ .feedback_form{
+  flex: 1;
+ }
+ .fd_image{
+  flex-shrink: 0;
+  width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(20px);
+ }
+ .fd_image img{
+  max-width: 100%;
+  height: auto;
+  display: block;
  }
 
  .feedback_container h2 {
