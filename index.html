@@ -128,8 +128,14 @@
                 <input type="text" placeholder="CLASS">
               </div>
             </form>
-            <div class="Reserve_btn">
-              <button class="anotherbutton">Reserve Flight</button>
+            <!-- resreve buttton-->
+            <button class="anotherbutton" id="showButton" onclick="showfeedback()">Reserve Flight</button>
+            <div id="modal" class="modal">
+              <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <span> Congratulations! You have successfully reserved the flight.</span>
+              </div>
+              <!--end of reserve button-->
             </div>
           </div>
         </div>

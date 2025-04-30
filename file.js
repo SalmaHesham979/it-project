@@ -144,3 +144,15 @@ const swiper = new Swiper(".swiper", {
   loop: true,
 });
 
+/*reserve button*/
+function showfeedback() {
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("showButton").style.display = "none";
+}
+
+function closeModal() {
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("showButton").style.display = "block";
+}
+//the end 
+
