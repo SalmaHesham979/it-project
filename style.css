@@ -872,6 +872,11 @@ nav.navbar{
    box-sizing: border-box;
 
  }
+ .ticket a {
+  text-decoration: none;!important
+  font-size: medium;
+  font-weight: bold;
+ }
 
  /*>>>>>>> Stashed changes*/
 
@@ -1044,7 +1049,7 @@ nav.navbar{
    line-height: normal;
    padding: 0;
  }
-
+/*razan's turn*/
  .feedback_container {
   display: flex;
   justify-content: space-between;
@@ -1164,7 +1169,7 @@ nav.navbar{
 
  .feedback_container .name label {
    position: relative;
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    font-weight: bold;
    margin-bottom: 0.5rem;
  }
@@ -1190,7 +1195,7 @@ nav.navbar{
 
  .feedback_container .email label {
    position: relative;
-   font-size: 1.4rem;
+   font-size: 1.2rem;
    font-weight: bold;
    margin-bottom: 0.5rem;
  }
