@@ -872,11 +872,7 @@ nav.navbar{
    box-sizing: border-box;
 
  }
- .ticket a {
-  text-decoration: none;!important
-  font-size: medium;
-  font-weight: bold;
- }
+ 
 
  /*>>>>>>> Stashed changes*/
 
@@ -1393,6 +1389,7 @@ color: var(--text-light);
 .footer__col form {
   display: grid;
   gap: 1rem;
+  display: flex;
 }
 
 .footer__col input{
@@ -1501,7 +1498,7 @@ color: var(--text-light);
   color: red;
 }
 .modal {
-  display: none;
+  display:none;
   position: fixed;
   top: 0;
   left: 0;
