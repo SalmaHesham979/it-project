@@ -51,30 +51,41 @@
     <!--end log in form-->
 
     <!-- start sign up form-->
-    <div>
-      <div class="signup_form">
-        <form>
-          <div>
-            <span id="form-close" onclick="signuphide()">&#10005;</span>
-          </div>
+    <div class="container">
+      <div><div class="signup_form">
+          <form>
+              <div>
+                  <span  id="form-close" onclick="signuphide()">&#10005;</span>
+              </div>
           <h1>Sign up</h1>
-          <input type="text" placeholder="Full Name" class="signupinfo empass" id="username" required autofocus>
-          <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em" required>
-          <input type="password" placeholder="Enter your password" class="signupinfo empass" id="pass" required>
+          <input type="text" placeholder="Full Name" class="signupinfo empass" id="username"  required autofocus>
+          <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em"  required >
+          <input type="password" placeholder="Enter your password" class="signupinfo empass"  id="pass" required >
           <div class="checkbox-group">
-            <input type="checkbox" id="agree" required>
-            <label for="agree">I agree the terms and conditions</label>
+              <input type="checkbox" id="agree" required>
+              <label for="agree">I agree the terms and conditions</label>
           </div>
-          <input type="submit" class="info" id="btn" value="Sign up" onclick="hide_from_signup()">
-          <br> <br>
-          <hr>
+          <input type="submit"  class="info"  id="btn" value="Sign up" onclick="hide_from_signup(event)">
+           <br> <br> <hr>
           <div class="google">
-            <i class="fab fa-google"></i>
-            <a href="https.google"><span>Sign in with Google</span></a>
+              <i class="fab fa-google"></i>
+             <a href="https.google"><span>Sign in with Google</span></a>
           </div>
-        </form>
-
+           </form>
+      
       </div>
+      
+      <div class="signup-image">
+          <img src="signup-image.jpg">
+       <div class="signup-welcome">
+         <h1>Create your account</h1>
+         <p>Welcome to your next adventure!
+           Let us turn your travel dreams into unforgettable journeys</p>
+       </div>
+      </div>
+      
+  </div>
+  </div>
 
       <!--end sign up form-->
 

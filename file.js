@@ -1,13 +1,13 @@
 let loginform = document.querySelector('.login_form');
 let lognowbtn = document.querySelector('.loginbtn') 
-let signupform= document.querySelector('.signup_form');
-
+let signupform= document.querySelector('.container');
 /*For login */
 
 /*function btzhr el login page lma ndos 3la el login button in nav bar suction */
 function showform(){
     document.querySelector('.login_form form').reset();
     loginform.classList.add("active");
+    document.body.classList.add('no-scroll');
     
 }
 
@@ -17,6 +17,7 @@ function hide() {
     let email =document.querySelector('#email').value.trim();
     let password =document.querySelector('#password').value.trim();
     let remember =document.querySelector('#remember').checked;
+    document.body.classList.remove('no-scroll');
     if(email !== '' && password !== '' && remember) {  
         loginform.classList.remove("active");  
       } else {  
@@ -28,6 +29,7 @@ function hide() {
 function hideform(){
     loginform.classList.remove("active");
     document.querySelector('.login_form form').reset();
+    document.body.classList.remove('no-scroll');
     
 }
 /* end for login */
@@ -39,36 +41,36 @@ function hideform(){
 
 /* when we click on zorar el sign up (el gmb don't have account) byodena l signup page 
  w y2fl el login page like a switch*/
-function signupshow(){
-    loginform.classList.remove("active");
-    signupform.classList.add("active");
-    
+ function signupshow(){
+  document.body.classList.add('no-scroll');
+  loginform.classList.remove("active");
+  signupform.classList.add("active");
 }
 
 /* zorar el (x) */
 function signuphide(){
-    signupform.classList.remove("active");
-    document.querySelector('.signup_form form').reset();
-    
+  document.body.classList.remove('no-scroll');
+  signupform.classList.remove("active");
+  document.querySelector('.signup_form form').reset();
 }
 
-
 /* submit signup */
-function hide_from_signup(){
-    let email =document.querySelector('#em').value.trim();
-    let password =document.querySelector('#pass').value.trim();
-    let username=document.querySelector('#username').value.trim();
-    let agree=document.querySelector('#agree').checked;
+function hide_from_signup(event){
+  event.preventDefault();
+  
+  let email = document.querySelector('#em').value.trim();
+  let password = document.querySelector('#pass').value.trim();
+  let username = document.querySelector('#username').value.trim();
+  let agree = document.querySelector('#agree').checked;
 
-    if(email !== '' && password !== '' && username !== '' && agree) {  
-        signupform.classList.remove("active");
-        document.querySelector('.signup_form form').reset();
-        
-        return true;
-      } else {  
-        alert("Please provide the following to verify your identity"); 
-        return false;
-      }  
+  if(email && password && username && agree) {  
+      signupform.classList.remove("active");
+      document.body.classList.remove('no-scroll');
+      document.querySelector('.signup_form form').reset();
+      alert("Registration successful!");
+  } else {  
+      alert("Please fill all fields and agree to terms"); 
+  }
       
 }
 /* end For sign up  */
