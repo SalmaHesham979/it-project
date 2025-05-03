@@ -1240,11 +1240,11 @@ nav.navbar{
 
  /* Reem's turn (contact section) */
  .heading {
-  padding: 40px;
+  padding: 0px;
    font-size: 100px;
    margin-left: 500px;
-   margin-top: 10px;
-   margin-bottom: 10px;
+   margin-top: 0px;
+   margin-bottom: 0px;
  }
 
  .contact .row {
@@ -1259,9 +1259,10 @@ nav.navbar{
    flex: 1 1 40rem;
    padding: 2rem 2.5rem;
    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
-   border: 1rem solid rgba(0, 0, 0, 0.1);
+   border: .5rem solid rgba(0, 0, 0, 0.1);
    background: #fff;
    border-radius: .5rem;
+   margin-left: 1rem;
  }
 
  .contact .row .image {
@@ -1274,10 +1275,10 @@ nav.navbar{
 
  .contact .row form .box {
    padding: 1rem;
-   font-size: 1.7rem;
+   font-size: 1.2rem;
    color: #333;
    text-transform: none;
-   border: 1rem solid rgba(0, 0, 0, 0.1);
+   border: .5rem solid rgba(0, 0, 0, 0.1);
    margin: .7rem 0;
    width: 100%;
  }
@@ -1310,12 +1311,50 @@ nav.navbar{
    font-size: 50px;
    margin-left: 8rem;
  }
+ .popup{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s,top 0.4s;
+ }
+ .open-popup{
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%,-50%) scale(1);
+ }
+ .popup .right{
+  width: 150px;
+  padding-top: 10px;
+ }
+ .popup .received{
+  padding: 10px;
+ }
+ .popup .ok{
+  width: 80%;
+  margin: 20px;
+  margin-bottom: 25px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+ }
 
  .hor {
    color: rgb(219, 112, 147);
    font-size: 60px;
  }
-
  /* ziad */
  footer {
   background-color: var(--extra-light);
