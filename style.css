@@ -205,6 +205,14 @@ nav.navbar{
    text-decoration: underline;
  }
 
+ .photo_sign{
+  width: auto;
+  height: 100%;
+  object-fit:contain;
+  object-position: 100%;
+  
+ }
+
 
 
 
@@ -214,7 +222,7 @@ nav.navbar{
  .container 
 {
     width: 65%;
-    height: 550px;
+    height: 600px;
     background-color:#fbfbff;
     position: absolute;
     top: -300%;
@@ -501,6 +509,7 @@ body.no-scroll {
  }
 
  .SectionContainer h2 {
+  padding-top: 40px;
    margin-bottom: 1rem;
    font-size: 2rem;
    font-weight: 700;
@@ -945,6 +954,7 @@ body.no-scroll {
  .swiper {
    margin-top: 4rem;
    width: 25%;
+   padding-bottom: 145px;
  }
 
  .swiper-wrapper {
@@ -1079,6 +1089,7 @@ body.no-scroll {
   align-items: center;
  }
  .feedback_form{
+  padding-top: 60px;
   flex: 1;
  }
  .fd_image{
@@ -1264,7 +1275,7 @@ body.no-scroll {
 
  /* Reem's turn (contact section) */
  .heading {
-  padding: 0px;
+  padding: 40px;   /*علشان جزء navبيجي على الكلام*/
    font-size: 100px;
    margin-left: 500px;
    margin-top: 0px;

@@ -140,11 +140,11 @@ ScrollReveal().reveal(".discover__card", {
   interval: 500,
 });
 
-const swiper = new Swiper(".swiper", {
+/*const swiper = new Swiper(".swiper", {
   slidesPerView: 3,
   spaceBetween: 20,
   loop: true,
-});
+});*/
 
 /*reserve button*/
 function showfeedback() {
