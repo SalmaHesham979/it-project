@@ -1,6 +1,9 @@
 let loginform = document.querySelector('.login_form');
 let lognowbtn = document.querySelector('.loginbtn') 
 let signupform= document.querySelector('.container');
+let sendfeedback = document.querySelector('.hidden');
+
+
 /*For login */
 
 /*function btzhr el login page lma ndos 3la el login button in nav bar suction */
@@ -166,3 +169,30 @@ function closeModal() {
 // function closepopup(){
 //   popup.classlist.remove("open-popup");
 // }
+
+// zorar el send
+function sendbtnfeedback(event) {
+  event.preventDefault();
+
+  let name=document.querySelector('.name input').value.trim();
+  let emailfeed=document.querySelector('.email input').value.trim();
+  let textarea = document.getElementById('textarea').value.trim();
+  let accept =document.getElementById('accept').checked;
+
+if (name !=='' && emailfeed !=='' && accept && textarea) {
+  sendfeedback.classList.add("active");
+  document.body.classList.add('no-scroll');
+}
+else {
+  alert("Please complete all fields");
+}
+}
+
+//close it
+function closefeedback() {
+  sendfeedback.classList.remove("active");
+  document.body.classList.remove('no-scroll');
+  document.getElementById('reset').reset();
+
+}
+

@@ -1272,6 +1272,35 @@ body.no-scroll {
      transform: scale(0.98);
    }
  }
+/* send button*/
+ .hidden{
+ position: fixed;
+ top: 50%;
+ Left: -100%;
+ transform: translate(-50%, -50%) ;
+  background-color:white;
+ color: white;
+  padding: 35px 50px;
+   border-radius: 8px;
+    box-shadow : 0 0 0 1000px rgb(0, 0,0,0.3);
+ transition: opacity 0.3s ease;
+ }
+ .hidden.active {
+  left:50%;
+ }
+ /* close send*/ 
+#feedbackclose {
+  position: absolute;
+  right: 2%;
+  top: 5%;
+  cursor: pointer;
+  color: black;
+}
+#feedbackclose:hover {
+  color: red;
+}
+
+
 
  /* Reem's turn (contact section) */
  .heading {
