@@ -160,16 +160,13 @@ function closeModal() {
   document.getElementById("showButton").style.display = "block";
 }
 //the end 
-// let popup = document.getElementById("popup");
-// function openpopup(e){
-//   e.preventdefault();
-//   popup.classlist.add("open-popup");
-// }
-
-// function closepopup(e){
-//   popup.classlist.remove("open-popup");
-// }
-
+let popup = document.getElementById("popup");
+function openpopup(){
+    popup.classList.add("open-popup");
+}
+function closepopup(){
+    popup.classList.remove("open-popup");
+}
 // zorar el send
 function sendbtnfeedback(event) {
   event.preventDefault();
