@@ -161,26 +161,28 @@ function closeModal() {
 }
 //the end 
 let popup = document.getElementById("popup");
-function sendbtnfeedback(event){
-    event.preventDefault();
-    let name =
-    document.querySelector('input[type="text"]').value.trim();
-    let email =
-    document.querySelector('input[type="email"]').value.trim();
-    let number =
-    document.querySelector('input[type="number"]').value.trim();
-    let message =
-    document.querySelector('textarea').value.trim();
-        
-        if(!name || !email || !number || !message){
-          alert("please complete all fields");
-          return;
-        }
+let overlay = document.getElementById("overlay");
 
-    popup.classList.add("open-popup");
+function sendbtnfeedback(event) {
+  event.preventDefault();
+
+  let name = document.querySelector('input[type="text"]');
+  let email = document.querySelector('input[type="email"]').value.trim();
+  let number = document.querySelector('input[type="number"]').value.trim();
+  let message = document.querySelector("textarea");
+
+  if (!name || !email || !number || !message) {
+    alert("Please complete all fields");
+    return;
+  }
+
+  popup.classList.add("open-popup");
+  overlay.style.display = "block";
 }
-function closepopup(){
-    popup.classList.remove("open-popup");
+
+function closepopup() {
+  popup.classList.remove("open-popup");
+  overlay.style.display = "none";
 }
 // zorar el send
 function sendbtnfeedback(event) {

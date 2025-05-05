@@ -537,34 +537,45 @@
         </div>
       </form>
       <!--Reem's turn(contact section starts)-->
-      <section class="contact" id="contact">
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
 
-        <h1 class="heading"><span style="color: rgb(219, 112, 147);">contact</span> us</h1>
+  <section class="contact" id="contact">
+    <h1 class="heading">
+      <span style="color: rgb(219, 112, 147)">contact</span> us
+    </h1>
 
-        <div class="row">
+    <div class="row">
+      <!-- Image Side -->
+      <div class="image">
+        <img src="Free Vector.jpg" alt="contact image" />
+        <h1 class="avl">Available <span class="hor">24</span> hours</h1>
+      </div>
+      <!-- Contact Form -->
+      <form onsubmit="sendbtnfeedback(event)" id="contact-form">
+        <input type="text" placeholder="Name" class="box" />
+        <input type="email" placeholder="Email" class="box" />
+        <input type="number" placeholder="Number" class="box" />
+        <textarea
+          class="box"
+          placeholder="Message"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button type="submit" class="btn">send message</button>
+      </form>
+    </div>
 
-          <form onsubmit="sendbtnfeedback(event)" id="contact-form">
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="number" placeholder="Number" class="box">
-            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-            <button type="submit" class="btn">send message</button>
-          </form>
-          <div class="container">
-            <div class="popup" id="popup">
-                <img src="Sinal De Visto.jpg">
-                <h2>THANK YOU!</h2>
-                <p>We've received your message and will respond shortly</p>
-                <button type="button" onclick="closepopup()">OK</button>
-            </div>
-        </div>
-          <div class="image">
-            <img src="Free Vector.jpg" alt="">
-            <h1 class="avl">Available<span class="hor"> 24</span> hours</h1>
-          </div>
-        </div>
-
-      </section>
+    <!-- Popup -->
+    <div class="container">
+      <div class="popup" id="popup">
+        <img src="/Sinal De Visto.jpg" alt="tick" />
+        <h2>THANK YOU!</h2>
+        <p>We've received your message and will respond shortly</p>
+        <button type="button" onclick="closepopup()">OK</button>
+      </div>
+    </div>
+  </section>
       <!--(contact section ends)-->
       <!-- ziad -->
       <footer id="contect">
