@@ -161,7 +161,22 @@ function closeModal() {
 }
 //the end 
 let popup = document.getElementById("popup");
-function openpopup(){
+function sendbtnfeedback(event){
+    event.preventDefault();
+    let name =
+    document.querySelector('input[type="text"]').value.trim();
+    let email =
+    document.querySelector('input[type="email"]').value.trim();
+    let number =
+    document.querySelector('input[type="number"]').value.trim();
+    let message =
+    document.querySelector('textarea').value.trim();
+        
+        if(!name || !email || !number || !message){
+          alert("please complete all fields");
+          return;
+        }
+
     popup.classList.add("open-popup");
 }
 function closepopup(){

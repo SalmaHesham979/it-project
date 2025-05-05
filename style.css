@@ -1413,11 +1413,11 @@ body.no-scroll {
   visibility: hidden;
   transition: trasform 0.4s, top 0.4s;
 }
-.open-popup{
+.popup.open-popup{
   visibility: visible;
   top: 50%;
   transform: translate(-50%,-50%) scale(1);
-
+  display: block;
 }
 
 
@@ -1431,6 +1431,9 @@ body.no-scroll {
   font-size: 38px;
   font-weight: 500;
   margin: 30px 0 10px;
+}
+.popup{
+  display: none;
 }
 .popup button{
   width: 100%;
