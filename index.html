@@ -18,12 +18,14 @@
 <body>
   <div class="header">
     <nav class="navbar">
-      <h2 class="logo">eqypt<span id="">air</span></h2>
+      <h2 class="logo">egypt<span id="">air</span></h2>
       <a href="#home">home</a>
       <a href="#about">about</a>
       <a href="#package">package</a>
+      <a href="#review">review</a>
+      <a href="#feedback">feedback</a> 
       <a href="#contact">contact</a>
-      <a href="#feedback">feedback</a>
+      
       <button class="nav_login" onclick="showform()">login</button>
     </nav>
   </div>
@@ -51,30 +53,41 @@
     <!--end log in form-->
 
     <!-- start sign up form-->
-    <div>
-      <div class="signup_form">
-        <form>
-          <div>
-            <span id="form-close" onclick="signuphide()">&#10005;</span>
-          </div>
+    <div class="container">
+      <div><div class="signup_form">
+          <form>
+              <div>
+                  <span  id="form-close" onclick="signuphide()">&#10005;</span>
+              </div>
           <h1>Sign up</h1>
-          <input type="text" placeholder="Full Name" class="signupinfo empass" id="username" required autofocus>
-          <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em" required>
-          <input type="password" placeholder="Enter your password" class="signupinfo empass" id="pass" required>
+          <input type="text" placeholder="Full Name" class="signupinfo empass" id="username"  required autofocus>
+          <input type="email" placeholder="Enter your email" class="signupinfo empass" id="em"  required >
+          <input type="password" placeholder="Enter your password" class="signupinfo empass"  id="pass" required >
           <div class="checkbox-group">
-            <input type="checkbox" id="agree" required>
-            <label for="agree">I agree the terms and conditions</label>
+              <input type="checkbox" id="agree" required>
+              <label for="agree">I agree the terms and conditions</label>
           </div>
-          <input type="submit" class="info" id="btn" value="Sign up" onclick="hide_from_signup()">
-          <br> <br>
-          <hr>
+          <input type="submit"  class="info"  id="btn" value="Sign up" onclick="hide_from_signup(event)">
+           <br> <br> <hr>
           <div class="google">
-            <i class="fab fa-google"></i>
-            <a href="https.google"><span>Sign in with Google</span></a>
+              <i class="fab fa-google"></i>
+             <a href="https.google"><span>Sign in with Google</span></a>
           </div>
-        </form>
-
+           </form>
+      
       </div>
+      
+      <div class="signup-image">
+          <img src="signup-image.jpg">
+       <div class="signup-welcome">
+         <h1>Create your account</h1>
+         <p>Welcome to your next adventure!
+           Let us turn your travel dreams into unforgettable journeys</p>
+       </div>
+      </div>
+      
+  </div>
+  </div>
 
       <!--end sign up form-->
 
@@ -103,7 +116,7 @@
       <section class="samheader">
         <div class="SectionContainer" id="booking_table">
           <h2>From Anywhere to Everywhere , Your Journey Starts Here.</h2>
-          <p>Discover New Horizons — Safe, Easy, and Hassle-Free</p>
+          <p>Discover New Horizons - Safe, Easy, and Hassle-Free</p>
           <div class="booking">
             <div class="booking_type" id="booking_type">
               <div class="active"> One Way</div>
@@ -251,7 +264,7 @@
         <div class="showcase_content">
           <h3>Ingite Your Passion for Travel with SkyWings</h3>
           <p>
-            Set your sights on extraordinary journeys with Skywings – where travel becomes more than just a destination.
+            Set your sights on extraordinary journeys with EgyptAir – where travel becomes more than just a destination.
             Our purpose is to ignite your passion for exploration and make every trip a story worth telling. Whether
             you’re drawn to the lively pulse of iconic cities, the peaceful charm of hidden coastlines, or the rich
             legacy of ancient wonders, Skywings is here to guide you every step of the way.
@@ -260,7 +273,7 @@
             that stay with you forever.
           </p>
           <p>
-            With Skywings by your side, discovering the world becomes a smooth and inspiring adventure.
+            With EgyptAir by your side, discovering the world becomes a smooth and inspiring adventure.
             Our expert guidance and local knowledge empower you to explore new destinations with ease and curiosity.
             From the initial planning stages to your return home, we’re here to ensure every step of your journey is
             effortless, enriching, and unforgettable.
@@ -329,7 +342,7 @@
         </div>
       </section>
 
-      <section class="section_container client_container"id="feedback">
+      <section class="section_container client_container"id="review">
         <h2 class="section__header">Loved By Over Thousand Travelers</h2>
         <p class="section__description">
           Explore unforgettable adventures,seen through the
@@ -447,7 +460,8 @@
           </div>
         </div>
       </section>
-      <div class="feedback_container"id="feedback">
+      <form id="reset">
+      <div class="feedback_container" id="feedback">
         <div class="feedback_form">
         <h2>Give us your feedback</h2>
         <p>your feedback is very important to us</p>
@@ -491,13 +505,24 @@
           <label>I accept the <a href="#">terms and conditions</a></label>
         </div>
         <div class="center">
-          <button class="btn_button">send</button>
+          <input  type="button" class="btn_button"  value="send"   onclick="sendbtnfeedback(event)">
         </div>
-        </div>
+      </div>
+    
         <div class="fd_image">
           <img src="fb_image.jfif" alt="feedback_image">
         </div>
-      </div>
+        
+        <!--pop up-->
+          <div class="hidden">
+            <div>
+              <span id="feedbackclose" onclick="closefeedback()">&#10005;</span>
+            </div>
+          <p>Congratulation, your Feedback is sent!</p>
+
+          </div>
+        </div>
+      </form>
       <!--Reem's turn(contact section starts)-->
       <section class="contact" id="contact">
 
