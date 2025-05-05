@@ -161,6 +161,6 @@ function closeModal() {
 //   popup.classlist.add("open-popup");
 // }
 
-// function closepopup(){
+// function closepopup(e){
 //   popup.classlist.remove("open-popup");
 // }
