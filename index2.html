@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Flights</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: black;
+        }
+
+        video {
+            width: 65%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px black;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8em;
+            }
+
+            video {
+                width: 90%;
+            }
+        }
+
+        .homee {
+            position: fixed;
+            bottom: 20px;
+            left: 370px;
+            background-color: #f3f4f6; /* light gray */
+            padding: 8px 15px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+
+        .homee a {
+          color: #6c63ff; /* soft purple */
+          text-decoration: none;
+          font-weight: bold;
+          font-family: 'Segoe UI', sans-serif;
+          font-size: 16px;}
+
+        .homee a:hover {
+           color: white;
+           background-color: #6c63ff;
+           padding: 8px 15px;
+           border-radius: 20px;
+          transition: 0.3s;}
+
+
+
+        
+    </style>
+</head>
+<body>
+    <h1>Take a Look! These Are the Flights We Arranged for You ✈</h1>
+    <video autoplay muted loop controls playsinline>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="homee">
+    <a href="index.html" >Home</a>
+   </div>
+</body>
+</html>

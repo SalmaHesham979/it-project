@@ -113,7 +113,7 @@ nav.navbar{
  /* علامه الاكس*/
  .login_form #form-close {
    position: absolute;
-   right: 29%;
+   right: 28%;
    top: 21%;
    font-size: large;
    color: #000038;
@@ -132,8 +132,8 @@ nav.navbar{
    border-radius: 2px;
    margin: auto;
    padding: 30px;
-   width: 40%;
-   height: 50%;
+   width: 45%;
+   height: 60%;
 
  }
 
@@ -152,7 +152,7 @@ nav.navbar{
    left: 5%;
    outline: none;
    display: block;
-   padding: 12px;
+   padding: 20px;
    margin: 15px;
  }
 
@@ -173,9 +173,9 @@ nav.navbar{
  #btn {
    border-radius: 20px;
    cursor: pointer;
-   margin-top: 25px;
+   margin-top: 35px;
    background-color: #dbdbee;
-
+   padding: 12px;
  }
 
  #btn:hover {
@@ -1650,3 +1650,16 @@ color: var(--text-light);
   z-index: 1000;
 } 
 /*end of reserve button*/
+
+/*video button */
+#ss {
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border: none;            
+  padding: 10px 20px;     
+  border-radius: 30px;
+  display: inline-block;
+  cursor: pointer;        
+}

@@ -45,7 +45,7 @@
         <input type="checkbox" id="remember">
         <label for="remember">remember me</label>
         <p>
-        <p>don't have an account?</p> <a href="#" id="signup" onclick="signupshow()">sign up</a>
+        <p>don't have an account?</p> <a href="#" id="signup" onclick="signupshow()">signup now</a>
         </p>
       </form>
 
@@ -99,8 +99,13 @@
           <div class="headerContent">
             <p>EXPERIENCE THE ART OF LUXURIOUS TRAVEL.</p>
             <h1>Premium Comfort</h1>
+
+            <!--flight button -->
             <div class="headerBtns">
-              <button class="h-btn">Book A Trip Now!</button>
+              <a href="index2.html" id="ss">Our Flights</a>
+            <!-- end of flight button-->
+
+
               <a href="#booking_table">
                 <span><i class="ri-play-circle-fill"></i></span>
               </a>
@@ -123,22 +128,22 @@
               <div> Round trip</div>
               <div>Multi Destination</div>
             </div>
-            <form action="" class="bookingform">
+            <form action="" class="bookingform"  id="reserveform">
               <div class="form_inputs">
                 <label for="arrival">To</label>
-                <input type="text" placeholder="ARRIVAL">
+                <input type="text" placeholder="ARRIVAL" class="to">
               </div>
               <div class="form_inputs">
                 <label for="departure">From</label>
-                <input type="text" placeholder="DEPARTURE">
+                <input type="text" placeholder="DEPARTURE" class="from">
               </div>
               <div class="form_inputs">
                 <label for="date">Date</label>
-                <input type="date" placeholder="DATE">
+                <input type="date" placeholder="DATE"  class="date">
               </div>
               <div class="form_inputs">
                 <label for="class">Class</label>
-                <input type="text" placeholder="CLASS">
+                <input type="text" placeholder="CLASS" class="class">
               </div>
             </form>
             <!-- resreve buttton-->
@@ -236,8 +241,7 @@
               <span><i class="ri-bookmark-3-line"></i></span>
               <h4>Plan Less, Tavel More</h4>
               <p>
-                With instant access to all your travel needs,
-                your next adventure is just a click away.
+                With instant access to all your travel needs.
               </p>
             </div>
           </div>
@@ -250,8 +254,7 @@
               <span><i class="ri-landscape-fill"></i></span>
               <h4>Travel Plans Made for You</h4>
               <p>
-                Embark on a journey crafted around your unique style.
-                From thrilling trips to immersive cultural escapes.
+              A Journey For You.
               </p>
             </div>
           </div>
@@ -264,7 +267,7 @@
               <span><i class="ri-map-2-line"></i></span>
               <h4>Local Favorites & Expert Picks</h4>
               <p>
-                Discover handpicked spots for dining, exploring, and uncovering hidden treasures
+                Discover handpicked spots.
               </p>
             </div>
           </div>
@@ -527,14 +530,15 @@
       </div>
       <!-- Contact Form -->
       <form onsubmit="sendbtnfeedback(event)" id="contact-form">
-        <input type="text" placeholder="Name" class="box" />
-        <input type="email" placeholder="Email" class="box" />
-        <input type="number" placeholder="Number" class="box" />
+        <input type="text" placeholder="Name" class="box" id="name"/>
+        <input type="email" placeholder="Email" class="box" id="emailcon" />
+        <input type="number" placeholder="Number" class="box" id="numbercon"/>
         <textarea
           class="box"
           placeholder="Message"
           cols="30"
           rows="10"
+          id="messagecon"
         ></textarea>
         <button type="submit" class="btn">send message</button>
       </form>
