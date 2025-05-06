@@ -953,21 +953,33 @@ body.no-scroll {
 
  .swiper {
    margin-top: 4rem;
-   width: 25%;
    padding-bottom: 145px;
  }
 
- .swiper-wrapper {
-   display: flex;
-   flex-wrap: nowrap;
- }
 
 
  .swiper-slide {
    min-width: 375px;
    width: 100px;
  }
-
+ @media(max-width:768px){
+  .swiper-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .swiper-slide{
+    min-width: 100%;
+  }
+ }
+ @media (max-width: 480px){ /*to convert small devices*/
+  .swiper-slide {
+    padding: 1rem;
+  }
+  .client__card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+ }
  .client__card {
    padding: 5px;
    background-color: var(--extra-light);
@@ -1002,7 +1014,7 @@ body.no-scroll {
  }
 
  .client__details img {
-   max-width: 60px;
+   max-width: 40px;
    border-radius: 100%;
  }
 

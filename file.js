@@ -1,9 +1,6 @@
 let loginform = document.querySelector('.login_form');
 let lognowbtn = document.querySelector('.loginbtn') 
 let signupform= document.querySelector('.container');
-let sendfeedback = document.querySelector('.hidden');
-
-
 /*For login */
 
 /*function btzhr el login page lma ndos 3la el login button in nav bar suction */
@@ -138,16 +135,6 @@ scrollReveal().reveal(".banner_card", {
   ...scrollRevealOption,
   interval: 500,
 });
-ScrollReveal().reveal(".discover__card", {
-  ...scrollRevealOption,
-  interval: 500,
-});
-
-/*const swiper = new Swiper(".swiper", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  loop: true,
-});*/
 
 /*reserve button*/
 function showfeedback() {
@@ -160,53 +147,12 @@ function closeModal() {
   document.getElementById("showButton").style.display = "block";
 }
 //the end 
-let popup = document.getElementById("popup");
-let overlay = document.getElementById("overlay");
+// let popup = document.getElementById("popup");
+// function openpopup(e){
+//   e.preventdefault();
+//   popup.classlist.add("open-popup");
+// }
 
-function sendbtnfeedback(event) {
-  event.preventDefault();
-
-  let name = document.querySelector('input[type="text"]');
-  let email = document.querySelector('input[type="email"]').value.trim();
-  let number = document.querySelector('input[type="number"]').value.trim();
-  let message = document.querySelector("textarea");
-
-  if (!name || !email || !number || !message) {
-    alert("Please complete all fields");
-    return;
-  }
-
-  popup.classList.add("open-popup");
-  overlay.style.display = "block";
-}
-
-function closepopup() {
-  popup.classList.remove("open-popup");
-  overlay.style.display = "none";
-}
-// zorar el send
-function sendbtnfeedback(event) {
-  event.preventDefault();
-
-  let name=document.querySelector('.name input').value.trim();
-  let emailfeed=document.querySelector('.email input').value.trim();
-  let textarea = document.getElementById('textarea').value.trim();
-  let accept =document.getElementById('accept').checked;
-
-if (name !=='' && emailfeed !=='' && accept && textarea) {
-  sendfeedback.classList.add("active");
-  document.body.classList.add('no-scroll');
-}
-else {
-  alert("Please complete all fields");
-}
-}
-
-//close it
-function closefeedback() {
-  sendfeedback.classList.remove("active");
-  document.body.classList.remove('no-scroll');
-  document.getElementById('reset').reset();
-
-}
-
+// function closepopup(){
+//   popup.classlist.remove("open-popup");
+// }
