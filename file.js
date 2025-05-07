@@ -2,8 +2,8 @@ let loginform = document.querySelector('.login_form');
 let lognowbtn = document.querySelector('.loginbtn') 
 let signupform= document.querySelector('.container');
 let sendfeedback = document.querySelector('.hidden');
-
-
+let contactpopup = document.querySelector('.popup');
+let overlay =document.querySelector('.overlay');
 /*For login */
 
 /*function btzhr el login page lma ndos 3la el login button in nav bar suction */
@@ -195,10 +195,37 @@ else {
 }
 
 //close it
+
 function closefeedback() {
   sendfeedback.classList.remove("active");
   document.body.classList.remove('no-scroll');
   document.getElementById('reset').reset();
 
+}
+
+//show contact message
+function showcontact(event)  {
+  event.preventDefault(); 
+  let namecon=document.getElementById('namecon').value.trim();
+  let emailcon=document.getElementById('emailcon').value.trim();
+  let textareacon = document.getElementById('textcon').value.trim();
+  let number =document.getElementById('numbercon').value.trim();
+  if (namecon!=='' && emailcon!=='' && textareacon!=='' && number!=='')
+  {
+    contactpopup.classList.add("active");
+  overlay.classList.add("active");
+  document.body.classList.add('no-scroll');
+  }
+  else {
+    alert('please full all reqired before submit');
+  }
+}
+
+//close contact message (ok button)
+function closecontact() {
+  contactpopup.classList.remove("active");
+  overlay.classList.remove("active");
+  document.querySelector('#contact-form ').reset();
+  document.body.classList.remove('no-scroll');
 }
 

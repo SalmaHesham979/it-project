@@ -547,17 +547,32 @@
         <div class="row">
 
           <form action="" id="contact-form">
-            <input type="text" placeholder="Name" class="box">
-            <input type="email" placeholder="Email" class="box">
-            <input type="number" placeholder="Number" class="box">
-            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send message" class="btn">
+            <input type="text" placeholder="Name" class="box"  id="namecon">
+            <input type="email" placeholder="Email" class="box" id="emailcon">
+            <input type="number" placeholder="Number" class="box" id="numbercon">
+            <textarea name="" class="box" placeholder="message"  cols="30" rows="10"  id="textcon"></textarea>
+            <input type="submit" value="Send message" class="btn"   onclick="showcontact(event)">
           </form>
           <div class="image">
             <img src="Free Vector.jpg" alt="">
             <h1 class="avl">Available<span class="hor"> 24</span> hours</h1>
           </div>
         </div>
+
+
+         <div class="overlay">
+        <div class="container-message">
+          <div class="popup" id="popup">
+              <img src="Sinal De Visto ícones gratuitos criados por Nendra Wahyu.jpg">
+              <h2>THANK YOU!</h2>
+              <p>We've received your message and will respond shortly</p>
+              <button type="button" onclick="closecontact()">OK</button>
+          </div>
+      </div>
+         </div>
+
+
+
 
       </section>
       <!--(contact section ends)-->
