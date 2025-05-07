@@ -951,28 +951,28 @@ body.no-scroll {
    color: var(--text-light);
  }
 
- .swiper {
+ .review-slider {
    margin-top: 4rem;
    padding-bottom: 145px;
  }
 
 
 
- .swiper-slide {
+ .review-card {
    min-width: 375px;
-   width: 100px;
+   width: 70%;
  }
  @media(max-width:768px){
-  .swiper-wrapper{
+  .review-track{
     flex-wrap: wrap;
     justify-content: center;
   }
-  .swiper-slide{
+  .review-card{
     min-width: 100%;
   }
  }
  @media (max-width: 480px){ /*to convert small devices*/
-  .swiper-slide {
+  .review-card {
     padding: 1rem;
   }
   .client__card {
@@ -985,6 +985,7 @@ body.no-scroll {
    background-color: var(--extra-light);
    border-radius: 1rem;
    transition: 0.3s;
+   border: 1px solid #ccc;
  }
 
  .client__card:hover {
@@ -1039,7 +1040,7 @@ body.no-scroll {
  .client__card:hover h5 {
    color: var(--extra-light);
  }
-
+/*ending of review part*/
 
  @media(width > 540px) {
    .showcase_container {
@@ -1078,7 +1079,7 @@ body.no-scroll {
  .showcase_container {
    display: flex;
  }
-
+/*title of review part by salma yasser*/
  .section__header{
   text-align: center;
  margin: 30px 0;
@@ -1091,6 +1092,7 @@ body.no-scroll {
    line-height: normal;
    padding: 0;
  }
+ /*end title by salma yasser*/
 /*razan's turn*/
  .feedback_container {
   display: flex;
