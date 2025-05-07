@@ -160,30 +160,6 @@ function closeModal() {
   document.getElementById("showButton").style.display = "block";
 }
 //the end 
-let popup = document.getElementById("popup");
-let overlay = document.getElementById("overlay");
-
-function sendbtnfeedback(event) {
-  event.preventDefault();
-
-  let name = document.querySelector('input[type="text"]');
-  let email = document.querySelector('input[type="email"]').value.trim();
-  let number = document.querySelector('input[type="number"]').value.trim();
-  let message = document.querySelector("textarea");
-
-  if (!name || !email || !number || !message) {
-    alert("Please complete all fields");
-    return;
-  }
-
-  popup.classList.add("open-popup");
-  overlay.style.display = "block";
-}
-
-function closepopup() {
-  popup.classList.remove("open-popup");
-  overlay.style.display = "none";
-}
 // zorar el send
 function sendbtnfeedback(event) {
   event.preventDefault();
