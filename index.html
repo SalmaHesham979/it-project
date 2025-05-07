@@ -45,7 +45,7 @@
         <input type="checkbox" id="remember">
         <label for="remember">remember me</label>
         <p>
-        <p>don't have an account?</p> <a href="#" id="signup" onclick="signupshow()">signup now</a>
+        <p>don't have an account?</p> <a href="#" id="signup" onclick="signupshow()">sign up</a>
         </p>
       </form>
 
@@ -128,22 +128,22 @@
               <div> Round trip</div>
               <div>Multi Destination</div>
             </div>
-            <form action="" class="bookingform"  id="reserveform">
+            <form action="" class="bookingform">
               <div class="form_inputs">
                 <label for="arrival">To</label>
-                <input type="text" placeholder="ARRIVAL" class="to">
+                <input type="text" placeholder="ARRIVAL">
               </div>
               <div class="form_inputs">
                 <label for="departure">From</label>
-                <input type="text" placeholder="DEPARTURE" class="from">
+                <input type="text" placeholder="DEPARTURE">
               </div>
               <div class="form_inputs">
                 <label for="date">Date</label>
-                <input type="date" placeholder="DATE"  class="date">
+                <input type="date" placeholder="DATE">
               </div>
               <div class="form_inputs">
                 <label for="class">Class</label>
-                <input type="text" placeholder="CLASS" class="class">
+                <input type="text" placeholder="CLASS">
               </div>
             </form>
             <!-- resreve buttton-->
@@ -432,6 +432,32 @@
                     <span><i class="ri-star-fill"></i></span>
                   </div>
                   <p>
+                    EgyptAir offered a transformative experience for my research<br>
+                    into historical landmarks. The unique aerial perspectives and<br>
+                    provided a new level of appreciation and insight into the
+                    sites I studied.
+                  </p>
+                </div>
+                <div class="client__details">
+                  <img src="maya.jpg" alt="client" />
+                  <div>
+                    <h4>Maya Lee</h4>
+                    <h5>Cultural Historian</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client__card">
+                <div class="client__content">
+                  <div class="client__rating">
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                    <span><i class="ri-star-fill"></i></span>
+                  </div>
+                  <p>
                     Finding a balance between work and travel can be challenging,<br>
                     but EgyptAir made it effortless. Their efficient planning and<br>
                     excellent recommendations helped me maximize my downtime and
@@ -514,46 +540,26 @@
         </div>
       </form>
       <!--Reem's turn(contact section starts)-->
-  <!-- Overlay -->
-  <div class="overlay" id="overlay"></div>
+      <section class="contact" id="contact">
 
-  <section class="contact" id="contact">
-    <h1 class="heading">
-      <span style="color: rgb(219, 112, 147)">contact</span> us
-    </h1>
+        <h1 class="heading"><span style="color: rgb(219, 112, 147);">contact</span> us</h1>
 
-    <div class="row">
-      <!-- Image Side -->
-      <div class="image">
-        <img src="Free Vector.jpg" alt="contact image" />
-        <h1 class="avl">Available <span class="hor">24</span> hours</h1>
-      </div>
-      <!-- Contact Form -->
-      <form onsubmit="sendbtnfeedback(event)" id="contact-form">
-        <input type="text" placeholder="Name" class="box" id="name"/>
-        <input type="email" placeholder="Email" class="box" id="emailcon" />
-        <input type="number" placeholder="Number" class="box" id="numbercon"/>
-        <textarea
-          class="box"
-          placeholder="Message"
-          cols="30"
-          rows="10"
-          id="messagecon"
-        ></textarea>
-        <button type="submit" class="btn">send message</button>
-      </form>
-    </div>
+        <div class="row">
 
-    <!-- Popup -->
-    <div class="container">
-      <div class="popup" id="popup">
-        <img src="/Sinal De Visto.jpg" alt="tick" />
-        <h2>THANK YOU!</h2>
-        <p>We've received your message and will respond shortly</p>
-        <button type="button" onclick="closepopup()">OK</button>
-      </div>
-    </div>
-  </section>
+          <form action="" id="contact-form">
+            <input type="text" placeholder="Name" class="box">
+            <input type="email" placeholder="Email" class="box">
+            <input type="number" placeholder="Number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send message" class="btn">
+          </form>
+          <div class="image">
+            <img src="Free Vector.jpg" alt="">
+            <h1 class="avl">Available<span class="hor"> 24</span> hours</h1>
+          </div>
+        </div>
+
+      </section>
       <!--(contact section ends)-->
       <!-- ziad -->
       <footer id="contect">

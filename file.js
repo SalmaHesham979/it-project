@@ -138,34 +138,28 @@ scrollReveal().reveal(".banner_card", {
   ...scrollRevealOption,
   interval: 500,
 });
+ScrollReveal().reveal(".discover__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+/*const swiper = new Swiper(".swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  loop: true,
+});*/
 
 /*reserve button*/
 function showfeedback() {
-
-  let to = document.querySelector ('.to');
-  let from=document.querySelector('.from').value.trim();
-  let date = document.querySelector('.date').value.trim();
-  let classes = document.querySelector ('.class').value.trim();
-  if (to !=='' && from !=='' && date && classes!=='') 
-  {
-    document.getElementById("modal").style.display = "block";
-    document.getElementById("showButton").style.display = "none";
-    document.body.classList.add('no-scroll');
-
-  }
-else {
-  alert ('complete all required before submit');
-}
- 
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("showButton").style.display = "none";
 }
 
 function closeModal() {
   document.getElementById("modal").style.display = "none";
   document.getElementById("showButton").style.display = "block";
-  document.body.classList.remove('no-scroll');
-  document.getElementById('reserveform').reset();
 }
-
+//the end 
 // zorar el send
 function sendbtnfeedback(event) {
   event.preventDefault();
@@ -192,21 +186,3 @@ function closefeedback() {
 
 }
 
-
-
-
-
-
-
-
-
-//the end 
-// let popup = document.getElementById("popup");
-// function openpopup(e){
-//   e.preventdefault();
-//   popup.classlist.add("open-popup");
-// }
-
-// function closepopup(){
-//   popup.classlist.remove("open-popup");
-// }
