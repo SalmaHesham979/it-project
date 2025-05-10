@@ -126,7 +126,7 @@ ScrollReveal().reveal(".showcase_content h3", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal(".showcase_Content p", {
+ScrollReveal().reveal(".showcase_content p", {
   ...scrollRevealOption,
   delay: 1000,
 });
