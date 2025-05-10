@@ -132,7 +132,7 @@ ScrollReveal().reveal(".showcase_content p", {
 });
 ScrollReveal().reveal(".showcase_btn", {
   ...scrollRevealOption,
-  delay: 1500,
+  delay: 900,
 });
 scrollReveal().reveal(".banner_card", {
   ...scrollRevealOption,
